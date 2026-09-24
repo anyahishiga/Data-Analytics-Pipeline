@@ -1,0 +1,13 @@
+# Tạo thư mục gốc và di chuyển vào trong
+mkdir cloud-data-pipeline
+cd cloud-data-pipeline
+
+# Tạo các thư mục con theo cấu trúc
+mkdir data\raw, data\processed
+mkdir src, sql, tests, logs
+
+# Tạo môi trường ảo Python 
+python -m venv venv
+
+# Kích hoạt môi trường ảo 
+.\venv\Scripts\activate
