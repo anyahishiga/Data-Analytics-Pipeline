@@ -1,5 +1,4 @@
 # ☁️ Cloud Data Analytics Pipeline for E-commerce
-
 ## 📌 Overview
 
 Đây là một project **Cloud Data Analytics Pipeline** được xây dựng để mô phỏng quy trình xử lý dữ liệu e-commerce từ **raw data → data processing → storage → analytics → visualization**.
@@ -9,6 +8,8 @@ The main goal of this project is to understand how raw sales data can be transfo
 Project sử dụng **Python, Pandas, AWS S3, PostgreSQL, SQL và Power BI**. Dữ liệu ban đầu được lưu dưới dạng CSV, sau đó được upload lên AWS S3, cleaned và transformed bằng Python/Pandas, rồi load vào database để thực hiện analytics.
 
 Cuối cùng, các kết quả phân tích được sử dụng để xây dựng **Power BI dashboard**.
+
+<img width="423" height="236" alt="images (1)" src="https://github.com/user-attachments/assets/06d19166-301e-4f70-a4d4-52d0ea87bf9e" />
 
 ---
 
@@ -43,6 +44,7 @@ Cuối cùng, các kết quả phân tích được sử dụng để xây dựn
 
 Pipeline được thiết kế theo từng stage để dễ debug, test và mở rộng về sau.
 
+<img width="739" height="415" alt="images" src="https://github.com/user-attachments/assets/1cdf1d2c-537a-435d-89c1-6bb901ccb685" />
 ---
 
 ## 🎯 Project Objectives
