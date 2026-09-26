@@ -1,0 +1,394 @@
+order_id,customer_id,order_date,product_id,product_name,category,quantity,unit_price,discount,payment_method,city,status,reject_reason
+ORD000198,CUS00681,2026-02-12,,Lipstick,Beauty,2,450000,0.20,Banking,Bien Hoa,Completed,missing_required_value
+ORD000225,CUS00654,2026-07-28,P012,Data Engineering Book,Books,1,450000,0.10,,Ha Noi,Completed,missing_required_value
+ORD000228,,2026-08-15,P003,Samsung Galaxy S24,Electronics,1,18000000,0.05,Credit Card,Ho Chi Minh,Completed,missing_required_value
+ORD000252,CUS00077,2026-08-06,P015,Badminton Racket,Sports,1,900000,0.00,,Ho Chi Minh,Pending,missing_required_value
+ORD000268,CUS01913,2026-05-10,P002,iPhone 15,Electronics,1,22000000,0.00,Cash,Hue,,missing_required_value
+ORD000397,,2026-07-13,P013,Lipstick,Beauty,3,450000,0.05,Credit Card,Bien Hoa,Completed,missing_required_value
+ORD000472,CUS01482,2026-07-29,,iPhone 15,Electronics,1,22000000,0.00,Credit Card,Hue,Completed,missing_required_value
+ORD000484,CUS00104,2026-05-18,P005,Men T-Shirt,Fashion,2,250000,0.10,E-Wallet,Ho Chi Minh,,missing_required_value
+ORD000488,CUS00680,2026-06-20,,Rice Cooker,Home Appliances,2,1500000,0.20,Cash,Hai Phong,Completed,missing_required_value
+ORD000546,CUS00472,2026-05-11,,Python Programming Book,Books,2,300000,0.10,Cash,Ha Noi,Completed,missing_required_value
+ORD000548,CUS01173,2026-02-06,,Badminton Racket,Sports,1,900000,0.00,Credit Card,Ha Noi,Returned,missing_required_value
+ORD000588,CUS01415,2026-02-07,P002,iPhone 15,Electronics,3,22000000,0.10,E-Wallet,Ho Chi Minh,,missing_required_value
+ORD000633,,2026-08-29,P010,Vacuum Cleaner,Home Appliances,1,4200000,0.05,E-Wallet,Ha Noi,Completed,missing_required_value
+ORD000794,,2026-06-19,P008,Rice Cooker,Home Appliances,1,1500000,0.10,Credit Card,Ho Chi Minh,Completed,missing_required_value
+ORD001026,CUS00858,2026-04-04,P005,Men T-Shirt,Fashion,1,250000,0.00,Credit Card,Nha Trang,,missing_required_value
+ORD001123,CUS01630,2026-07-28,,iPhone 15,Electronics,1,22000000,0.15,Cash,Can Tho,Completed,missing_required_value
+ORD001274,CUS00204,2026-08-26,,Yoga Mat,Sports,3,400000,0.00,Cash,Can Tho,Completed,missing_required_value
+ORD001416,CUS01274,2026-01-12,,Men T-Shirt,Fashion,1,250000,0.00,E-Wallet,Ho Chi Minh,Completed,missing_required_value
+ORD001485,CUS00294,2026-02-28,P003,Samsung Galaxy S24,Electronics,1,18000000,0.00,,Ho Chi Minh,Completed,missing_required_value
+ORD001580,CUS01470,2026-05-02,P012,Data Engineering Book,Books,5,450000,0.05,Credit Card,Ho Chi Minh,,missing_required_value
+ORD001606,,2026-08-17,P009,Air Fryer,Home Appliances,1,2800000,0.15,Credit Card,Ho Chi Minh,Completed,missing_required_value
+ORD001691,,2026-08-21,P004,Sony Headphones,Electronics,1,3500000,0.10,Cash,Da Nang,Completed,missing_required_value
+ORD001890,,2026-03-01,P015,Badminton Racket,Sports,1,900000,0.00,Cash,Da Nang,Completed,missing_required_value
+ORD001918,CUS00063,2026-04-12,P008,Rice Cooker,Home Appliances,1,1500000,0.00,,Hue,Cancelled,missing_required_value
+ORD001979,CUS01335,2026-03-04,P001,Laptop ASUS,Electronics,3,25000000,0.00,Credit Card,Ha Noi,,missing_required_value
+ORD001998,CUS00244,2026-02-09,P010,Vacuum Cleaner,Home Appliances,3,4200000,0.15,,Vung Tau,Completed,missing_required_value
+ORD002020,,2026-02-12,P001,Laptop ASUS,Electronics,1,25000000,0.20,Banking,Nha Trang,Completed,missing_required_value
+ORD002037,,2026-03-28,P003,Samsung Galaxy S24,Electronics,4,18000000,0.00,Cash,Ha Noi,Completed,missing_required_value
+ORD002061,CUS01703,2026-03-24,,Air Fryer,Home Appliances,5,2800000,0.00,Banking,Nha Trang,Completed,missing_required_value
+ORD002112,CUS01226,2026-07-09,,Data Engineering Book,Books,2,450000,0.05,Cash,Ho Chi Minh,Completed,missing_required_value
+ORD002134,CUS00860,2026-05-28,P014,Yoga Mat,Sports,5,400000,0.00,,Ha Noi,Pending,missing_required_value
+ORD002190,CUS00053,2026-02-16,,Samsung Galaxy S24,Electronics,4,18000000,0.10,Banking,Can Tho,Completed,missing_required_value
+ORD002249,,2026-04-17,P009,Air Fryer,Home Appliances,1,2800000,0.05,Cash,Thu Dau Mot,Completed,missing_required_value
+ORD002296,CUS00023,2026-06-27,P002,iPhone 15,Electronics,1,22000000,0.05,,Ho Chi Minh,Completed,missing_required_value
+ORD002317,,2026-06-22,P002,iPhone 15,Electronics,1,22000000,0.10,E-Wallet,Ho Chi Minh,Completed,missing_required_value
+ORD002363,,2026-03-08,P013,Lipstick,Beauty,1,450000,0.00,Banking,Bien Hoa,Completed,missing_required_value
+ORD002456,CUS01917,2026-03-21,P011,Python Programming Book,Books,2,300000,0.20,Cash,Ho Chi Minh,,missing_required_value
+ORD002493,CUS00471,2026-01-07,P001,Laptop ASUS,Electronics,1,25000000,0.10,Credit Card,Bien Hoa,,missing_required_value
+ORD002545,CUS00223,2026-01-03,P013,Lipstick,Beauty,1,450000,0.20,,Ho Chi Minh,Cancelled,missing_required_value
+ORD002553,CUS01426,2026-08-13,P006,Women Dress,Fashion,2,650000,0.00,Cash,Ha Noi,,missing_required_value
+ORD002776,CUS00666,2026-02-20,P009,Air Fryer,Home Appliances,1,2800000,0.15,,Ha Noi,Completed,missing_required_value
+ORD002782,,2026-01-01,P001,Laptop ASUS,Electronics,2,25000000,0.00,Credit Card,Thu Dau Mot,Completed,missing_required_value
+ORD002792,,2026-02-16,P001,Laptop ASUS,Electronics,1,25000000,0.00,Credit Card,Ha Noi,Completed,missing_required_value
+ORD003123,,2026-06-23,P014,Yoga Mat,Sports,1,400000,0.20,Banking,Ho Chi Minh,Completed,missing_required_value
+ORD003169,,2026-02-08,P009,Air Fryer,Home Appliances,2,2800000,0.15,Banking,Ha Noi,Completed,missing_required_value
+ORD003543,,2026-02-09,P004,Sony Headphones,Electronics,2,3500000,0.00,Credit Card,Hai Phong,Completed,missing_required_value
+ORD003552,CUS00822,2026-03-08,,Women Dress,Fashion,1,650000,0.20,E-Wallet,Can Tho,Completed,missing_required_value
+ORD003661,,2026-05-06,P015,Badminton Racket,Sports,2,900000,0.10,Credit Card,Ho Chi Minh,Cancelled,missing_required_value
+ORD003673,,2026-07-03,P013,Lipstick,Beauty,5,450000,0.00,E-Wallet,Ho Chi Minh,Completed,missing_required_value
+ORD003724,CUS00261,2026-03-05,P003,Samsung Galaxy S24,Electronics,1,18000000,0.05,Banking,Ha Noi,,missing_required_value
+ORD003731,CUS00515,2026-06-27,,Samsung Galaxy S24,Electronics,1,18000000,0.20,Banking,Thu Dau Mot,Completed,missing_required_value
+ORD003747,CUS01555,2026-07-12,P007,Nike Sneakers,Fashion,1,2500000,0.00,Cash,Da Nang,,missing_required_value
+ORD003856,CUS00538,2026-06-02,,Samsung Galaxy S24,Electronics,1,18000000,0.00,Banking,Ha Noi,Completed,missing_required_value
+ORD003924,,2026-08-30,P004,Sony Headphones,Electronics,1,3500000,0.05,E-Wallet,Ha Noi,Completed,missing_required_value
+ORD003951,CUS00692,2026-03-14,P006,Women Dress,Fashion,2,650000,0.20,Cash,Hai Phong,,missing_required_value
+ORD003996,CUS00422,2026-01-13,P013,Lipstick,Beauty,3,450000,0.00,,Da Nang,Completed,missing_required_value
+ORD004021,CUS01391,2026-06-01,P014,Yoga Mat,Sports,5,400000,0.15,,Ho Chi Minh,Completed,missing_required_value
+ORD004065,CUS00279,2026-05-08,P004,Sony Headphones,Electronics,1,3500000,0.05,,Da Nang,Completed,missing_required_value
+ORD004090,,2026-05-24,P011,Python Programming Book,Books,2,300000,0.00,Banking,Bien Hoa,Completed,missing_required_value
+ORD004293,,2026-05-05,P007,Nike Sneakers,Fashion,2,2500000,0.10,Banking,Thu Dau Mot,Completed,missing_required_value
+ORD004343,CUS01983,2026-07-19,P004,Sony Headphones,Electronics,1,3500000,0.20,Banking,Ho Chi Minh,,missing_required_value
+ORD004345,CUS01000,2026-06-29,,iPhone 15,Electronics,1,22000000,0.20,Credit Card,Da Nang,Completed,missing_required_value
+ORD004449,,2026-03-12,P004,Sony Headphones,Electronics,1,3500000,0.20,Credit Card,Ha Noi,Completed,missing_required_value
+ORD004577,CUS01078,2026-05-22,P011,Python Programming Book,Books,1,300000,0.00,Credit Card,Ha Noi,,missing_required_value
+ORD004716,CUS01805,2026-07-26,P002,iPhone 15,Electronics,3,22000000,0.00,Credit Card,Ha Noi,,missing_required_value
+ORD004841,,2026-07-15,P012,Data Engineering Book,Books,1,450000,0.10,Banking,Can Tho,Pending,missing_required_value
+ORD004926,CUS00076,2026-03-19,,Rice Cooker,Home Appliances,5,1500000,0.00,Credit Card,Ha Noi,Completed,missing_required_value
+ORD004946,CUS00236,2026-07-21,P006,Women Dress,Fashion,4,650000,0.10,,Thu Dau Mot,Completed,missing_required_value
+ORD005012,,2026-07-04,P013,Lipstick,Beauty,1,450000,0.00,Banking,Da Nang,Completed,missing_required_value
+ORD005094,CUS01515,2026-08-04,,Python Programming Book,Books,5,300000,0.00,Cash,Ho Chi Minh,Cancelled,missing_required_value
+ORD005276,,2026-03-23,P003,Samsung Galaxy S24,Electronics,1,18000000,0.05,Credit Card,Ho Chi Minh,Completed,missing_required_value
+ORD005335,CUS01846,2026-03-08,P007,Nike Sneakers,Fashion,1,2500000,0.00,Credit Card,Da Nang,,missing_required_value
+ORD005462,CUS01239,2026-07-19,P005,Men T-Shirt,Fashion,4,250000,0.00,Banking,Da Nang,,missing_required_value
+ORD005494,CUS01478,2026-01-13,P011,Python Programming Book,Books,4,300000,0.10,Cash,Ho Chi Minh,,missing_required_value
+ORD005498,CUS00391,2026-06-20,P011,Python Programming Book,Books,1,300000,0.00,Credit Card,Thu Dau Mot,,missing_required_value
+ORD005552,CUS01711,2026-06-06,,Samsung Galaxy S24,Electronics,5,18000000,0.10,E-Wallet,Ha Noi,Completed,missing_required_value
+ORD005553,CUS00702,2026-07-24,P001,Laptop ASUS,Electronics,5,25000000,0.15,Banking,Hue,,missing_required_value
+ORD005557,,2026-03-31,P008,Rice Cooker,Home Appliances,1,1500000,0.05,Credit Card,Thu Dau Mot,Cancelled,missing_required_value
+ORD005616,CUS01629,2026-04-22,,Sony Headphones,Electronics,5,3500000,0.05,Credit Card,Ho Chi Minh,Completed,missing_required_value
+ORD005754,CUS00448,2026-03-26,P015,Badminton Racket,Sports,4,900000,0.00,,Ho Chi Minh,Completed,missing_required_value
+ORD005780,CUS01502,2026-08-18,P006,Women Dress,Fashion,2,650000,0.00,Credit Card,Can Tho,,missing_required_value
+ORD005833,CUS00658,2026-07-24,P002,iPhone 15,Electronics,1,22000000,0.00,Cash,Bien Hoa,,missing_required_value
+ORD005867,CUS00802,2026-02-12,P011,Python Programming Book,Books,1,300000,0.05,,Hai Phong,Returned,missing_required_value
+ORD005916,,2026-04-06,P010,Vacuum Cleaner,Home Appliances,2,4200000,0.20,E-Wallet,Ha Noi,Completed,missing_required_value
+ORD005918,CUS01879,2026-02-13,,iPhone 15,Electronics,5,22000000,0.20,Credit Card,Bien Hoa,Completed,missing_required_value
+ORD005997,CUS00071,2026-07-14,P013,Lipstick,Beauty,2,450000,0.00,,Vung Tau,Pending,missing_required_value
+ORD006064,CUS00191,2026-08-24,P014,Yoga Mat,Sports,1,400000,0.15,,Ha Noi,Completed,missing_required_value
+ORD006102,CUS01531,2026-07-06,,Data Engineering Book,Books,3,450000,0.00,Banking,Ho Chi Minh,Cancelled,missing_required_value
+ORD006146,CUS01919,2026-02-23,,iPhone 15,Electronics,3,22000000,0.20,E-Wallet,Da Nang,Completed,missing_required_value
+ORD006154,CUS00577,2026-04-06,P005,Men T-Shirt,Fashion,1,250000,0.15,Banking,Ha Noi,,missing_required_value
+ORD006167,CUS00620,2026-08-06,P007,Nike Sneakers,Fashion,1,2500000,0.00,Credit Card,Ha Noi,,missing_required_value
+ORD006359,CUS01743,2026-01-18,P007,Nike Sneakers,Fashion,2,2500000,0.00,E-Wallet,Ho Chi Minh,,missing_required_value
+ORD006696,CUS01228,2026-01-22,,Vacuum Cleaner,Home Appliances,1,4200000,0.05,E-Wallet,Bien Hoa,Completed,missing_required_value
+ORD006842,CUS01823,2026-04-26,P004,Sony Headphones,Electronics,2,3500000,0.10,,Da Nang,Completed,missing_required_value
+ORD006884,CUS01414,2026-02-11,P002,iPhone 15,Electronics,3,22000000,0.10,Cash,Ha Noi,,missing_required_value
+ORD006895,CUS00607,2026-08-13,P006,Women Dress,Fashion,2,650000,0.00,,Thu Dau Mot,Completed,missing_required_value
+ORD006903,CUS00317,2026-07-29,,Nike Sneakers,Fashion,4,2500000,0.00,Banking,Ha Noi,Completed,missing_required_value
+ORD006942,CUS00161,2026-03-17,,Women Dress,Fashion,1,650000,0.05,Banking,Ho Chi Minh,Completed,missing_required_value
+ORD006981,,2026-04-04,P004,Sony Headphones,Electronics,1,3500000,0.00,Credit Card,Ha Noi,Completed,missing_required_value
+ORD006986,CUS00719,2026-07-02,P011,Python Programming Book,Books,2,300000,0.15,Credit Card,Ha Noi,,missing_required_value
+ORD007013,CUS00507,2026-08-25,P015,Badminton Racket,Sports,2,900000,0.00,,Hai Phong,Completed,missing_required_value
+ORD007159,CUS01192,2026-07-13,P015,Badminton Racket,Sports,1,900000,0.00,Credit Card,Thu Dau Mot,,missing_required_value
+ORD007306,,2026-05-01,P014,Yoga Mat,Sports,1,400000,0.10,Credit Card,Ha Noi,Completed,missing_required_value
+ORD007412,,2026-05-10,P002,iPhone 15,Electronics,3,22000000,0.20,Credit Card,Da Nang,Completed,missing_required_value
+ORD007459,CUS01952,2026-08-28,,Data Engineering Book,Books,1,450000,0.05,Credit Card,Ho Chi Minh,Completed,missing_required_value
+ORD007599,,2026-06-21,P009,Air Fryer,Home Appliances,4,2800000,0.10,Cash,Ho Chi Minh,Completed,missing_required_value
+ORD007632,CUS00631,2026-07-07,P007,Nike Sneakers,Fashion,2,2500000,0.00,Banking,Ha Noi,,missing_required_value
+ORD007834,CUS01618,2026-06-06,P004,Sony Headphones,Electronics,2,3500000,0.00,,Vung Tau,Completed,missing_required_value
+ORD007862,,2026-04-20,P011,Python Programming Book,Books,1,300000,0.15,Banking,Ho Chi Minh,Completed,missing_required_value
+ORD007872,CUS00204,2026-06-13,P008,Rice Cooker,Home Appliances,2,1500000,0.15,Credit Card,Ho Chi Minh,,missing_required_value
+ORD007953,CUS00218,2026-05-10,,Laptop ASUS,Electronics,1,25000000,0.20,Banking,Bien Hoa,Cancelled,missing_required_value
+ORD007954,CUS00357,2026-03-25,P001,Laptop ASUS,Electronics,1,25000000,0.15,Cash,Vung Tau,,missing_required_value
+ORD007980,CUS01708,2026-06-04,,iPhone 15,Electronics,2,22000000,0.00,Credit Card,Ho Chi Minh,Completed,missing_required_value
+ORD008145,CUS01369,2026-04-24,P002,iPhone 15,Electronics,2,22000000,0.15,,Ho Chi Minh,Completed,missing_required_value
+ORD008206,,2026-07-18,P006,Women Dress,Fashion,3,650000,0.15,Credit Card,Da Nang,Completed,missing_required_value
+ORD008231,CUS01724,2026-08-06,P006,Women Dress,Fashion,4,650000,0.00,Credit Card,Ho Chi Minh,,missing_required_value
+ORD008236,,2026-07-28,P004,Sony Headphones,Electronics,3,3500000,0.00,Cash,Bien Hoa,Completed,missing_required_value
+ORD008263,,2026-06-01,P009,Air Fryer,Home Appliances,1,2800000,0.05,Banking,Can Tho,Completed,missing_required_value
+ORD008268,,2026-08-31,P012,Data Engineering Book,Books,1,450000,0.05,Cash,Ho Chi Minh,Completed,missing_required_value
+ORD008269,,2026-06-01,P005,Men T-Shirt,Fashion,5,250000,0.05,Banking,Ha Noi,Pending,missing_required_value
+ORD008431,CUS00615,2026-07-20,P011,Python Programming Book,Books,1,300000,0.00,,Bien Hoa,Returned,missing_required_value
+ORD008604,CUS00996,2026-03-10,,iPhone 15,Electronics,1,22000000,0.00,Credit Card,Ho Chi Minh,Completed,missing_required_value
+ORD008621,CUS00787,2026-03-20,,Laptop ASUS,Electronics,2,25000000,0.05,Banking,Da Nang,Completed,missing_required_value
+ORD008638,CUS01866,2026-05-07,,iPhone 15,Electronics,1,22000000,0.00,Banking,Ho Chi Minh,Completed,missing_required_value
+ORD008712,,2026-08-27,P013,Lipstick,Beauty,2,450000,0.00,Cash,Hai Phong,Cancelled,missing_required_value
+ORD008763,CUS01862,2026-07-16,,Women Dress,Fashion,4,650000,0.15,Banking,Ha Noi,Completed,missing_required_value
+ORD008877,CUS01733,2026-08-03,P002,iPhone 15,Electronics,2,22000000,0.05,,Ha Noi,Returned,missing_required_value
+ORD008956,CUS00092,2026-08-30,,Python Programming Book,Books,2,300000,0.15,Banking,Ho Chi Minh,Completed,missing_required_value
+ORD009083,CUS00819,2026-07-22,P004,Sony Headphones,Electronics,1,3500000,0.00,Banking,Da Nang,,missing_required_value
+ORD009172,CUS01116,2026-07-16,P008,Rice Cooker,Home Appliances,1,1500000,0.00,Credit Card,Da Nang,,missing_required_value
+ORD009263,CUS00595,2026-06-07,,Sony Headphones,Electronics,2,3500000,0.05,Cash,Ha Noi,Completed,missing_required_value
+ORD009279,CUS00928,2026-04-02,,Lipstick,Beauty,1,450000,0.20,Banking,Ha Noi,Completed,missing_required_value
+ORD009423,CUS00211,2026-06-12,,Badminton Racket,Sports,3,900000,0.05,E-Wallet,Bien Hoa,Completed,missing_required_value
+ORD009489,CUS00393,2026-03-23,P011,Python Programming Book,Books,1,300000,0.00,,Ho Chi Minh,Cancelled,missing_required_value
+ORD009543,CUS01440,2026-04-26,,Sony Headphones,Electronics,2,3500000,0.10,E-Wallet,Da Nang,Cancelled,missing_required_value
+ORD009592,CUS01088,2026-05-31,P012,Data Engineering Book,Books,1,450000,0.00,E-Wallet,Can Tho,,missing_required_value
+ORD009600,,2026-06-27,P011,Python Programming Book,Books,2,300000,0.05,E-Wallet,Ha Noi,Completed,missing_required_value
+ORD009611,CUS00353,2026-01-13,P014,Yoga Mat,Sports,1,400000,0.15,Banking,Ha Noi,,missing_required_value
+ORD009628,CUS00345,2026-08-19,P001,Laptop ASUS,Electronics,1,25000000,0.00,,Thu Dau Mot,Completed,missing_required_value
+ORD009666,,2026-07-20,P006,Women Dress,Fashion,3,650000,0.20,Banking,Hai Phong,Completed,missing_required_value
+ORD009720,CUS00405,2026-04-24,P003,Samsung Galaxy S24,Electronics,1,18000000,0.00,Banking,Ho Chi Minh,,missing_required_value
+ORD009788,CUS00600,2026-08-13,,Rice Cooker,Home Appliances,1,1500000,0.05,Cash,Nha Trang,Completed,missing_required_value
+ORD009795,CUS01279,2026-05-24,P015,Badminton Racket,Sports,3,900000,0.15,E-Wallet,Ho Chi Minh,,missing_required_value
+ORD000046,CUS01643,not a date,P007,Nike Sneakers,Fashion,3,2500000,0.05,Banking,Hai Phong,Completed,invalid_order_date
+ORD000381,CUS01555,not a date,P001,Laptop ASUS,Electronics,2,25000000,0.05,Banking,Da Nang,Completed,invalid_order_date
+ORD001368,CUS01180,2026-13-45,P003,Samsung Galaxy S24,Electronics,3,18000000,0.15,Banking,Hai Phong,Completed,invalid_order_date
+ORD001424,CUS01102,15/01/2026,P015,Badminton Racket,Sports,1,900000,0.15,Cash,Can Tho,Completed,invalid_order_date
+ORD001454,CUS01304,2026-13-45,P006,Women Dress,Fashion,1,650000,0.00,Credit Card,Ho Chi Minh,Completed,invalid_order_date
+ORD002148,CUS00296,not a date,P008,Rice Cooker,Home Appliances,2,1500000,0.00,Credit Card,Nha Trang,Completed,invalid_order_date
+ORD002509,CUS00516,2026-13-45,P010,Vacuum Cleaner,Home Appliances,2,4200000,0.20,E-Wallet,Bien Hoa,Completed,invalid_order_date
+ORD002627,CUS01964,2026-13-45,P008,Rice Cooker,Home Appliances,4,1500000,0.05,Credit Card,Thu Dau Mot,Cancelled,invalid_order_date
+ORD002669,CUS00067,2026-13-45,P010,Vacuum Cleaner,Home Appliances,3,4200000,0.00,Banking,Ha Noi,Completed,invalid_order_date
+ORD002801,CUS01211,2026-13-45,P015,Badminton Racket,Sports,1,900000,0.15,E-Wallet,Ha Noi,Completed,invalid_order_date
+ORD002827,CUS00369,2026-13-45,P005,Men T-Shirt,Fashion,3,250000,0.10,E-Wallet,Ha Noi,Pending,invalid_order_date
+ORD002880,CUS01027,2026-13-45,P005,Men T-Shirt,Fashion,2,250000,0.10,Cash,Bien Hoa,Completed,invalid_order_date
+ORD003541,CUS01831,15/01/2026,P013,Lipstick,Beauty,4,450000,0.15,Credit Card,Ha Noi,Completed,invalid_order_date
+ORD004044,CUS01335,2026-13-45,P014,Yoga Mat,Sports,1,400000,0.10,E-Wallet,Hai Phong,Returned,invalid_order_date
+ORD004193,CUS01282,2026-13-45,P005,Men T-Shirt,Fashion,1,250000,0.10,Cash,Da Nang,Cancelled,invalid_order_date
+ORD005005,CUS01542,15/01/2026,P012,Data Engineering Book,Books,1,450000,0.10,E-Wallet,Thu Dau Mot,Completed,invalid_order_date
+ORD005287,CUS00621,15/01/2026,P002,iPhone 15,Electronics,2,22000000,0.15,Banking,Can Tho,Completed,invalid_order_date
+ORD005605,CUS00143,15/01/2026,P014,Yoga Mat,Sports,3,400000,0.05,Banking,Ha Noi,Completed,invalid_order_date
+ORD005689,CUS01638,15/01/2026,P007,Nike Sneakers,Fashion,3,2500000,0.00,Banking,Ho Chi Minh,Completed,invalid_order_date
+ORD006225,CUS00829,15/01/2026,P015,Badminton Racket,Sports,2,900000,0.00,E-Wallet,Hai Phong,Completed,invalid_order_date
+ORD006920,CUS01089,15/01/2026,P002,iPhone 15,Electronics,1,22000000,0.00,Banking,Ho Chi Minh,Completed,invalid_order_date
+ORD006932,CUS00494,not a date,P011,Python Programming Book,Books,3,300000,0.05,Cash,Ho Chi Minh,Completed,invalid_order_date
+ORD007034,CUS01606,not a date,P010,Vacuum Cleaner,Home Appliances,1,4200000,0.20,Cash,Ho Chi Minh,Completed,invalid_order_date
+ORD007729,CUS00175,15/01/2026,P009,Air Fryer,Home Appliances,2,2800000,0.00,Banking,Vung Tau,Pending,invalid_order_date
+ORD008106,CUS00015,15/01/2026,P001,Laptop ASUS,Electronics,2,25000000,0.15,Cash,Nha Trang,Completed,invalid_order_date
+ORD008259,CUS01123,2026-13-45,P014,Yoga Mat,Sports,2,400000,0.10,E-Wallet,Da Nang,Cancelled,invalid_order_date
+ORD008280,CUS00713,15/01/2026,P003,Samsung Galaxy S24,Electronics,1,18000000,0.15,Credit Card,Thu Dau Mot,Completed,invalid_order_date
+ORD008312,CUS00746,not a date,P010,Vacuum Cleaner,Home Appliances,1,4200000,0.00,E-Wallet,Ho Chi Minh,Completed,invalid_order_date
+ORD009071,CUS01438,2026-13-45,P008,Rice Cooker,Home Appliances,2,1500000,0.15,Credit Card,Da Nang,Pending,invalid_order_date
+ORD009560,CUS00456,2026-13-45,P010,Vacuum Cleaner,Home Appliances,2,4200000,0.15,Banking,Bien Hoa,Completed,invalid_order_date
+ORD009734,CUS01113,15/01/2026,P012,Data Engineering Book,Books,2,450000,0.15,Banking,Ho Chi Minh,Completed,invalid_order_date
+ORD000203,CUS01893,2026-07-09,P006,Women Dress,Fashion,abc,650000,0.20,Credit Card,Ha Noi,Returned,invalid_quantity_type
+ORD001233,CUS01667,2026-05-25,P014,Yoga Mat,Sports,abc,400000,0.20,Banking,Da Nang,Cancelled,invalid_quantity_type
+ORD001443,CUS00645,2026-08-02,P012,Data Engineering Book,Books,abc,450000,0.20,Cash,Ha Noi,Pending,invalid_quantity_type
+ORD001657,CUS01577,2026-03-24,P014,Yoga Mat,Sports,abc,400000,0.05,Cash,Ha Noi,Completed,invalid_quantity_type
+ORD002654,CUS01542,2026-07-21,P004,Sony Headphones,Electronics,abc,3500000,0.00,Banking,Ho Chi Minh,Pending,invalid_quantity_type
+ORD002913,CUS00711,2026-01-12,P010,Vacuum Cleaner,Home Appliances,abc,4200000,0.05,Banking,Thu Dau Mot,Completed,invalid_quantity_type
+ORD003211,CUS00284,2026-01-19,P014,Yoga Mat,Sports,abc,400000,0.10,E-Wallet,Can Tho,Cancelled,invalid_quantity_type
+ORD003240,CUS00137,2026-07-18,P001,Laptop ASUS,Electronics,abc,25000000,0.10,Credit Card,Ha Noi,Cancelled,invalid_quantity_type
+ORD003532,CUS00996,2026-02-12,P012,Data Engineering Book,Books,abc,450000,0.05,Credit Card,Ho Chi Minh,Completed,invalid_quantity_type
+ORD003567,CUS01002,2026-01-05,P001,Laptop ASUS,Electronics,abc,25000000,0.15,Banking,Bien Hoa,Returned,invalid_quantity_type
+ORD003846,CUS00531,2026-03-19,P012,Data Engineering Book,Books,abc,450000,0.15,Banking,Can Tho,Completed,invalid_quantity_type
+ORD004170,CUS00985,2026-08-23,P001,Laptop ASUS,Electronics,abc,25000000,0.00,Banking,Vung Tau,Completed,invalid_quantity_type
+ORD004479,CUS00507,2026-01-09,P003,Samsung Galaxy S24,Electronics,abc,18000000,0.20,Credit Card,Ha Noi,Completed,invalid_quantity_type
+ORD004601,CUS00051,2026-02-09,P008,Rice Cooker,Home Appliances,abc,1500000,0.00,Banking,Nha Trang,Completed,invalid_quantity_type
+ORD004921,CUS00693,2026-03-13,P004,Sony Headphones,Electronics,abc,3500000,0.00,Cash,Thu Dau Mot,Completed,invalid_quantity_type
+ORD005791,CUS00524,2026-07-25,P013,Lipstick,Beauty,abc,450000,0.20,Credit Card,Can Tho,Completed,invalid_quantity_type
+ORD005954,CUS00932,2026-03-24,P014,Yoga Mat,Sports,abc,400000,0.20,Banking,Vung Tau,Completed,invalid_quantity_type
+ORD007043,CUS01864,2026-05-20,P002,iPhone 15,Electronics,abc,22000000,0.20,E-Wallet,Ho Chi Minh,Completed,invalid_quantity_type
+ORD007396,CUS00113,2026-07-30,P001,Laptop ASUS,Electronics,abc,25000000,0.10,Credit Card,Hai Phong,Completed,invalid_quantity_type
+ORD007437,CUS01373,2026-05-06,P011,Python Programming Book,Books,abc,300000,0.20,E-Wallet,Hue,Completed,invalid_quantity_type
+ORD007654,CUS00174,2026-07-09,P006,Women Dress,Fashion,abc,650000,0.10,Banking,Nha Trang,Cancelled,invalid_quantity_type
+ORD009311,CUS01403,2026-08-13,P005,Men T-Shirt,Fashion,abc,250000,0.15,Credit Card,Can Tho,Completed,invalid_quantity_type
+ORD009599,CUS01635,2026-03-09,P008,Rice Cooker,Home Appliances,abc,1500000,0.15,Banking,Bien Hoa,Completed,invalid_quantity_type
+ORD009765,CUS01969,2026-04-17,P011,Python Programming Book,Books,abc,300000,0.00,Banking,Thu Dau Mot,Cancelled,invalid_quantity_type
+ORD000085,CUS01360,2026-06-16,P005,Men T-Shirt,Fashion,-5,250000,0.05,Credit Card,Bien Hoa,Completed,invalid_quantity
+ORD000903,CUS01266,2026-05-08,P004,Sony Headphones,Electronics,-1,3500000,0.2,Cash,Ho Chi Minh,Completed,invalid_quantity
+ORD000908,CUS01798,2026-05-03,P006,Women Dress,Fashion,-1,650000,0.15,Credit Card,Ho Chi Minh,Completed,invalid_quantity
+ORD000932,CUS01786,2026-07-14,P005,Men T-Shirt,Fashion,0,250000,0.0,Credit Card,Ho Chi Minh,Completed,invalid_quantity
+ORD001033,CUS01806,2026-05-23,P010,Vacuum Cleaner,Home Appliances,0,4200000,0.0,E-Wallet,Ho Chi Minh,Completed,invalid_quantity
+ORD001913,CUS01652,2026-06-29,P005,Men T-Shirt,Fashion,0,250000,0.0,Credit Card,Ho Chi Minh,Cancelled,invalid_quantity
+ORD002096,CUS01969,2026-02-19,P012,Data Engineering Book,Books,-5,450000,0.0,E-Wallet,Ho Chi Minh,Completed,invalid_quantity
+ORD002243,CUS00200,2026-05-21,P010,Vacuum Cleaner,Home Appliances,-5,4200000,0.0,Cash,Ho Chi Minh,Completed,invalid_quantity
+ORD002400,CUS01310,2026-03-10,P003,Samsung Galaxy S24,Electronics,0,18000000,0.2,Banking,Can Tho,Completed,invalid_quantity
+ORD002631,CUS00433,2026-08-19,P013,Lipstick,Beauty,-5,450000,0.0,Credit Card,Ha Noi,Completed,invalid_quantity
+ORD002944,CUS00675,2026-03-03,P015,Badminton Racket,Sports,0,900000,0.0,Cash,Ho Chi Minh,Completed,invalid_quantity
+ORD003009,CUS01697,2026-06-18,P010,Vacuum Cleaner,Home Appliances,-1,4200000,0.2,E-Wallet,Ho Chi Minh,Completed,invalid_quantity
+ORD003170,CUS00330,2026-06-28,P010,Vacuum Cleaner,Home Appliances,-5,4200000,0.05,Banking,Bien Hoa,Completed,invalid_quantity
+ORD003239,CUS00327,2026-04-22,P005,Men T-Shirt,Fashion,0,250000,0.1,E-Wallet,Hai Phong,Completed,invalid_quantity
+ORD003454,CUS01487,2026-05-08,P006,Women Dress,Fashion,0,650000,0.2,Banking,Ho Chi Minh,Returned,invalid_quantity
+ORD003820,CUS01132,2026-08-11,P013,Lipstick,Beauty,0,450000,0.15,Banking,Ha Noi,Completed,invalid_quantity
+ORD004027,CUS01520,2026-07-16,P002,iPhone 15,Electronics,0,22000000,0.2,E-Wallet,Thu Dau Mot,Completed,invalid_quantity
+ORD004567,CUS01356,2026-07-10,P003,Samsung Galaxy S24,Electronics,-1,18000000,0.15,Banking,Bien Hoa,Completed,invalid_quantity
+ORD004672,CUS01653,2026-08-11,P011,Python Programming Book,Books,-5,300000,0.0,Banking,Hai Phong,Completed,invalid_quantity
+ORD004729,CUS01240,2026-03-22,P004,Sony Headphones,Electronics,-1,3500000,0.05,Banking,Ho Chi Minh,Pending,invalid_quantity
+ORD004961,CUS00133,2026-03-01,P015,Badminton Racket,Sports,-5,900000,0.1,Banking,Thu Dau Mot,Completed,invalid_quantity
+ORD005225,CUS01624,2026-04-14,P010,Vacuum Cleaner,Home Appliances,-5,4200000,0.05,Cash,Ho Chi Minh,Completed,invalid_quantity
+ORD005333,CUS00360,2026-07-09,P012,Data Engineering Book,Books,-1,450000,0.0,Credit Card,Ho Chi Minh,Completed,invalid_quantity
+ORD005700,CUS01993,2026-07-26,P009,Air Fryer,Home Appliances,0,2800000,0.2,Banking,Ho Chi Minh,Completed,invalid_quantity
+ORD006078,CUS01355,2026-08-23,P010,Vacuum Cleaner,Home Appliances,0,4200000,0.0,Banking,Da Nang,Completed,invalid_quantity
+ORD006087,CUS00700,2026-08-04,P002,iPhone 15,Electronics,0,22000000,0.1,Banking,Bien Hoa,Completed,invalid_quantity
+ORD006865,CUS01420,2026-03-22,P015,Badminton Racket,Sports,-5,900000,0.1,Credit Card,Ha Noi,Completed,invalid_quantity
+ORD007105,CUS00387,2026-03-27,P006,Women Dress,Fashion,-1,650000,0.05,Cash,Ho Chi Minh,Cancelled,invalid_quantity
+ORD007279,CUS01657,2026-03-21,P001,Laptop ASUS,Electronics,-1,25000000,0.0,Credit Card,Thu Dau Mot,Completed,invalid_quantity
+ORD007324,CUS01996,2026-06-16,P014,Yoga Mat,Sports,-5,400000,0.05,Credit Card,Bien Hoa,Completed,invalid_quantity
+ORD007379,CUS00137,2026-02-04,P003,Samsung Galaxy S24,Electronics,-1,18000000,0.0,Banking,Ha Noi,Completed,invalid_quantity
+ORD007386,CUS01816,2026-06-11,P011,Python Programming Book,Books,0,300000,0.05,Cash,Ho Chi Minh,Completed,invalid_quantity
+ORD007403,CUS00247,2026-02-02,P004,Sony Headphones,Electronics,-5,3500000,0.0,Credit Card,Hai Phong,Completed,invalid_quantity
+ORD007938,CUS00461,2026-05-26,P012,Data Engineering Book,Books,-1,450000,0.2,Cash,Ho Chi Minh,Completed,invalid_quantity
+ORD008015,CUS01187,2026-02-03,P008,Rice Cooker,Home Appliances,-1,1500000,0.05,Banking,Thu Dau Mot,Returned,invalid_quantity
+ORD008090,CUS01160,2026-02-27,P009,Air Fryer,Home Appliances,-5,2800000,0.15,Cash,Ha Noi,Completed,invalid_quantity
+ORD008915,CUS00598,2026-05-23,P007,Nike Sneakers,Fashion,-5,2500000,0.0,Banking,Hai Phong,Completed,invalid_quantity
+ORD009137,CUS00737,2026-04-04,P015,Badminton Racket,Sports,-5,900000,0.0,E-Wallet,Ho Chi Minh,Completed,invalid_quantity
+ORD000058,CUS00095,2026-03-16,P001,Laptop ASUS,Electronics,2,-100000,0.0,Credit Card,Nha Trang,Completed,invalid_unit_price
+ORD000139,CUS01944,2026-08-15,P002,iPhone 15,Electronics,1,-100000,0.0,Cash,Da Nang,Completed,invalid_unit_price
+ORD000525,CUS01776,2026-07-12,P013,Lipstick,Beauty,5,0,0.0,Credit Card,Da Nang,Completed,invalid_unit_price
+ORD000684,CUS00905,2026-01-20,P007,Nike Sneakers,Fashion,1,-100000,0.15,Banking,Can Tho,Pending,invalid_unit_price
+ORD000856,CUS00670,2026-02-20,P011,Python Programming Book,Books,2,-100000,0.0,Cash,Da Nang,Completed,invalid_unit_price
+ORD001031,CUS01866,2026-02-27,P005,Men T-Shirt,Fashion,2,-100000,0.1,Cash,Nha Trang,Completed,invalid_unit_price
+ORD001113,CUS00206,2026-01-28,P013,Lipstick,Beauty,2,-100000,0.2,E-Wallet,Nha Trang,Completed,invalid_unit_price
+ORD001159,CUS00776,2026-08-26,P004,Sony Headphones,Electronics,4,0,0.0,Credit Card,Thu Dau Mot,Completed,invalid_unit_price
+ORD001426,CUS00369,2026-08-01,P015,Badminton Racket,Sports,1,-100000,0.1,Banking,Da Nang,Cancelled,invalid_unit_price
+ORD001555,CUS01400,2026-08-13,P003,Samsung Galaxy S24,Electronics,2,0,0.1,E-Wallet,Ha Noi,Completed,invalid_unit_price
+ORD001649,CUS00329,2026-07-26,P014,Yoga Mat,Sports,5,-100000,0.0,Credit Card,Ho Chi Minh,Completed,invalid_unit_price
+ORD002540,CUS00856,2026-08-20,P015,Badminton Racket,Sports,1,-100000,0.15,Cash,Ho Chi Minh,Completed,invalid_unit_price
+ORD003435,CUS01964,2026-01-05,P005,Men T-Shirt,Fashion,1,-100000,0.2,E-Wallet,Da Nang,Cancelled,invalid_unit_price
+ORD003789,CUS01495,2026-06-17,P012,Data Engineering Book,Books,1,0,0.0,Banking,Bien Hoa,Completed,invalid_unit_price
+ORD004020,CUS00800,2026-07-08,P004,Sony Headphones,Electronics,2,-100000,0.2,Cash,Ho Chi Minh,Completed,invalid_unit_price
+ORD004186,CUS01619,2026-03-15,P009,Air Fryer,Home Appliances,1,-100000,0.05,Cash,Ho Chi Minh,Completed,invalid_unit_price
+ORD004347,CUS01696,2026-02-24,P006,Women Dress,Fashion,1,-100000,0.0,E-Wallet,Ha Noi,Completed,invalid_unit_price
+ORD004371,CUS01211,2026-08-19,P007,Nike Sneakers,Fashion,1,-100000,0.2,Credit Card,Ha Noi,Completed,invalid_unit_price
+ORD004406,CUS00640,2026-08-23,P007,Nike Sneakers,Fashion,2,-100000,0.0,E-Wallet,Vung Tau,Completed,invalid_unit_price
+ORD004434,CUS00063,2026-03-16,P012,Data Engineering Book,Books,1,-100000,0.0,Banking,Ho Chi Minh,Completed,invalid_unit_price
+ORD004689,CUS01909,2026-08-28,P002,iPhone 15,Electronics,4,-100000,0.0,Banking,Ho Chi Minh,Completed,invalid_unit_price
+ORD004745,CUS01423,2026-06-03,P014,Yoga Mat,Sports,2,-100000,0.0,Cash,Can Tho,Completed,invalid_unit_price
+ORD004746,CUS00508,2026-04-20,P012,Data Engineering Book,Books,1,0,0.0,Banking,Bien Hoa,Completed,invalid_unit_price
+ORD004845,CUS01361,2026-03-20,P010,Vacuum Cleaner,Home Appliances,4,-100000,0.1,Cash,Ho Chi Minh,Completed,invalid_unit_price
+ORD004853,CUS00388,2026-08-10,P002,iPhone 15,Electronics,2,-100000,0.1,Credit Card,Ho Chi Minh,Completed,invalid_unit_price
+ORD005134,CUS01942,2026-07-01,P015,Badminton Racket,Sports,1,-100000,0.2,Credit Card,Bien Hoa,Completed,invalid_unit_price
+ORD005784,CUS01152,2026-05-12,P010,Vacuum Cleaner,Home Appliances,2,-100000,0.15,E-Wallet,Hai Phong,Completed,invalid_unit_price
+ORD005879,CUS00332,2026-05-11,P011,Python Programming Book,Books,3,-100000,0.05,Credit Card,Ha Noi,Completed,invalid_unit_price
+ORD006005,CUS00171,2026-01-03,P015,Badminton Racket,Sports,5,-100000,0.0,Credit Card,Bien Hoa,Completed,invalid_unit_price
+ORD006046,CUS00161,2026-04-26,P011,Python Programming Book,Books,5,0,0.0,Banking,Thu Dau Mot,Completed,invalid_unit_price
+ORD006112,CUS00699,2026-01-20,P011,Python Programming Book,Books,2,0,0.15,E-Wallet,Ho Chi Minh,Completed,invalid_unit_price
+ORD006179,CUS01653,2026-07-11,P009,Air Fryer,Home Appliances,4,0,0.0,Banking,Ha Noi,Cancelled,invalid_unit_price
+ORD006616,CUS01323,2026-07-27,P009,Air Fryer,Home Appliances,1,-100000,0.2,Credit Card,Hai Phong,Completed,invalid_unit_price
+ORD006949,CUS01561,2026-04-20,P005,Men T-Shirt,Fashion,1,-100000,0.0,Banking,Ho Chi Minh,Cancelled,invalid_unit_price
+ORD007404,CUS01546,2026-03-03,P003,Samsung Galaxy S24,Electronics,4,0,0.05,Cash,Ho Chi Minh,Completed,invalid_unit_price
+ORD007473,CUS01027,2026-06-25,P013,Lipstick,Beauty,4,-100000,0.2,Credit Card,Da Nang,Completed,invalid_unit_price
+ORD007596,CUS01199,2026-03-30,P011,Python Programming Book,Books,4,0,0.2,E-Wallet,Ha Noi,Completed,invalid_unit_price
+ORD007629,CUS00227,2026-05-27,P008,Rice Cooker,Home Appliances,4,-100000,0.2,Credit Card,Da Nang,Completed,invalid_unit_price
+ORD007864,CUS00823,2026-04-01,P013,Lipstick,Beauty,2,0,0.1,Credit Card,Ho Chi Minh,Completed,invalid_unit_price
+ORD008211,CUS00503,2026-06-19,P008,Rice Cooker,Home Appliances,1,0,0.2,Cash,Ho Chi Minh,Completed,invalid_unit_price
+ORD008965,CUS00327,2026-07-03,P008,Rice Cooker,Home Appliances,4,0,0.15,Banking,Da Nang,Completed,invalid_unit_price
+ORD009333,CUS00854,2026-07-12,P014,Yoga Mat,Sports,4,-100000,0.1,Cash,Ho Chi Minh,Completed,invalid_unit_price
+ORD000044,CUS00725,2026-07-29,P002,iPhone 15,Electronics,4,22000000,1.5,Cash,Nha Trang,Completed,invalid_discount
+ORD000047,CUS01759,2026-05-07,P001,Laptop ASUS,Electronics,3,25000000,-0.2,Banking,Thu Dau Mot,Cancelled,invalid_discount
+ORD000399,CUS00120,2026-07-16,P005,Men T-Shirt,Fashion,2,250000,-0.2,E-Wallet,Hue,Completed,invalid_discount
+ORD000477,CUS01488,2026-01-31,P012,Data Engineering Book,Books,3,450000,-0.2,Credit Card,Da Nang,Pending,invalid_discount
+ORD000505,CUS00854,2026-08-22,P007,Nike Sneakers,Fashion,1,2500000,-0.2,Banking,Bien Hoa,Completed,invalid_discount
+ORD000509,CUS01733,2026-03-11,P010,Vacuum Cleaner,Home Appliances,1,4200000,-0.2,Banking,Nha Trang,Completed,invalid_discount
+ORD000613,CUS00427,2026-05-22,P011,Python Programming Book,Books,5,300000,-0.2,Banking,Bien Hoa,Completed,invalid_discount
+ORD000616,CUS01191,2026-07-16,P001,Laptop ASUS,Electronics,2,25000000,2.0,Credit Card,Ho Chi Minh,Completed,invalid_discount
+ORD000673,CUS01612,2026-01-04,P012,Data Engineering Book,Books,1,450000,1.5,E-Wallet,Ho Chi Minh,Completed,invalid_discount
+ORD001112,CUS01673,2026-03-12,P006,Women Dress,Fashion,2,650000,2.0,Cash,Hue,Cancelled,invalid_discount
+ORD001687,CUS01258,2026-01-14,P002,iPhone 15,Electronics,2,22000000,-0.2,Banking,Hue,Completed,invalid_discount
+ORD001857,CUS00952,2026-06-30,P005,Men T-Shirt,Fashion,1,250000,1.5,Cash,Nha Trang,Pending,invalid_discount
+ORD001916,CUS01036,2026-04-24,P009,Air Fryer,Home Appliances,1,2800000,1.5,Banking,Ho Chi Minh,Completed,invalid_discount
+ORD002051,CUS01656,2026-02-17,P002,iPhone 15,Electronics,2,22000000,-0.2,Banking,Da Nang,Completed,invalid_discount
+ORD002081,CUS00637,2026-08-09,P013,Lipstick,Beauty,2,450000,1.5,E-Wallet,Thu Dau Mot,Completed,invalid_discount
+ORD002129,CUS01945,2026-08-11,P007,Nike Sneakers,Fashion,1,2500000,1.5,Cash,Bien Hoa,Completed,invalid_discount
+ORD002340,CUS01157,2026-03-27,P004,Sony Headphones,Electronics,1,3500000,1.5,Credit Card,Ha Noi,Completed,invalid_discount
+ORD002469,CUS00599,2026-07-10,P015,Badminton Racket,Sports,2,900000,2.0,Cash,Ha Noi,Completed,invalid_discount
+ORD002503,CUS01036,2026-08-03,P006,Women Dress,Fashion,1,650000,1.5,Credit Card,Thu Dau Mot,Completed,invalid_discount
+ORD002556,CUS01765,2026-06-15,P010,Vacuum Cleaner,Home Appliances,1,4200000,-0.2,Banking,Can Tho,Completed,invalid_discount
+ORD002745,CUS01567,2026-08-04,P012,Data Engineering Book,Books,1,450000,1.5,E-Wallet,Nha Trang,Completed,invalid_discount
+ORD002786,CUS00679,2026-04-02,P013,Lipstick,Beauty,1,450000,1.5,Banking,Ha Noi,Completed,invalid_discount
+ORD002789,CUS01883,2026-02-14,P007,Nike Sneakers,Fashion,1,2500000,1.5,Banking,Da Nang,Completed,invalid_discount
+ORD002867,CUS00135,2026-05-13,P014,Yoga Mat,Sports,1,400000,2.0,Cash,Ha Noi,Completed,invalid_discount
+ORD003269,CUS00862,2026-08-30,P015,Badminton Racket,Sports,1,900000,-0.2,Cash,Thu Dau Mot,Completed,invalid_discount
+ORD003393,CUS01915,2026-02-23,P015,Badminton Racket,Sports,5,900000,-0.2,Banking,Thu Dau Mot,Completed,invalid_discount
+ORD003414,CUS01605,2026-07-05,P004,Sony Headphones,Electronics,1,3500000,-0.2,E-Wallet,Ho Chi Minh,Completed,invalid_discount
+ORD003554,CUS01099,2026-04-12,P003,Samsung Galaxy S24,Electronics,1,18000000,1.5,E-Wallet,Hai Phong,Completed,invalid_discount
+ORD004117,CUS00689,2026-02-04,P006,Women Dress,Fashion,2,650000,1.5,E-Wallet,Ho Chi Minh,Cancelled,invalid_discount
+ORD004352,CUS00452,2026-05-01,P013,Lipstick,Beauty,2,450000,-0.2,Credit Card,Thu Dau Mot,Completed,invalid_discount
+ORD004536,CUS00806,2026-02-06,P011,Python Programming Book,Books,2,300000,-0.2,Banking,Nha Trang,Completed,invalid_discount
+ORD005019,CUS01569,2026-06-18,P012,Data Engineering Book,Books,3,450000,1.5,Banking,Bien Hoa,Completed,invalid_discount
+ORD005379,CUS01533,2026-06-15,P010,Vacuum Cleaner,Home Appliances,1,4200000,-0.2,Banking,Ho Chi Minh,Completed,invalid_discount
+ORD005509,CUS01434,2026-01-29,P010,Vacuum Cleaner,Home Appliances,1,4200000,-0.2,E-Wallet,Ha Noi,Completed,invalid_discount
+ORD005620,CUS01777,2026-08-17,P006,Women Dress,Fashion,2,650000,-0.2,Cash,Ho Chi Minh,Cancelled,invalid_discount
+ORD005905,CUS01462,2026-07-15,P002,iPhone 15,Electronics,2,22000000,-0.2,Banking,Thu Dau Mot,Completed,invalid_discount
+ORD005945,CUS00270,2026-07-02,P012,Data Engineering Book,Books,1,450000,1.5,Banking,Ha Noi,Cancelled,invalid_discount
+ORD006073,CUS01321,2026-07-31,P014,Yoga Mat,Sports,1,400000,2.0,Banking,Hai Phong,Completed,invalid_discount
+ORD006331,CUS01593,2026-03-29,P006,Women Dress,Fashion,2,650000,-0.2,Banking,Ho Chi Minh,Returned,invalid_discount
+ORD006582,CUS01726,2026-08-30,P002,iPhone 15,Electronics,1,22000000,2.0,Cash,Ha Noi,Cancelled,invalid_discount
+ORD006600,CUS00829,2026-07-06,P004,Sony Headphones,Electronics,4,3500000,1.5,Cash,Ho Chi Minh,Completed,invalid_discount
+ORD006684,CUS00758,2026-08-08,P005,Men T-Shirt,Fashion,1,250000,-0.2,Banking,Ha Noi,Pending,invalid_discount
+ORD006890,CUS01131,2026-08-24,P004,Sony Headphones,Electronics,1,3500000,-0.2,Cash,Ho Chi Minh,Cancelled,invalid_discount
+ORD007374,CUS01894,2026-07-23,P005,Men T-Shirt,Fashion,2,250000,2.0,Banking,Nha Trang,Completed,invalid_discount
+ORD007399,CUS00699,2026-01-20,P008,Rice Cooker,Home Appliances,1,1500000,-0.2,Banking,Ha Noi,Completed,invalid_discount
+ORD008016,CUS01792,2026-01-28,P002,iPhone 15,Electronics,4,22000000,2.0,E-Wallet,Ha Noi,Completed,invalid_discount
+ORD008098,CUS01688,2026-04-22,P007,Nike Sneakers,Fashion,1,2500000,1.5,E-Wallet,Da Nang,Completed,invalid_discount
+ORD008198,CUS01527,2026-05-11,P006,Women Dress,Fashion,5,650000,-0.2,Credit Card,Nha Trang,Completed,invalid_discount
+ORD008404,CUS00397,2026-08-30,P001,Laptop ASUS,Electronics,1,25000000,2.0,E-Wallet,Hue,Cancelled,invalid_discount
+ORD008424,CUS01947,2026-02-06,P012,Data Engineering Book,Books,1,450000,-0.2,Banking,Ho Chi Minh,Completed,invalid_discount
+ORD008572,CUS01970,2026-01-01,P013,Lipstick,Beauty,1,450000,2.0,Banking,Can Tho,Completed,invalid_discount
+ORD008829,CUS01765,2026-03-26,P009,Air Fryer,Home Appliances,4,2800000,2.0,E-Wallet,Ho Chi Minh,Completed,invalid_discount
+ORD008870,CUS01780,2026-05-22,P008,Rice Cooker,Home Appliances,1,1500000,1.5,Credit Card,Vung Tau,Returned,invalid_discount
+ORD008938,CUS01783,2026-04-27,P001,Laptop ASUS,Electronics,1,25000000,2.0,Banking,Ho Chi Minh,Completed,invalid_discount
+ORD009163,CUS01898,2026-08-25,P007,Nike Sneakers,Fashion,2,2500000,1.5,E-Wallet,Thu Dau Mot,Completed,invalid_discount
+ORD009190,CUS00850,2026-07-07,P011,Python Programming Book,Books,1,300000,1.5,Banking,Ho Chi Minh,Completed,invalid_discount
+ORD009202,CUS00610,2026-03-22,P008,Rice Cooker,Home Appliances,1,1500000,-0.2,Cash,Hai Phong,Completed,invalid_discount
+ORD009336,CUS00791,2026-08-25,P004,Sony Headphones,Electronics,2,3500000,-0.2,Credit Card,Ha Noi,Completed,invalid_discount
+ORD009350,CUS01095,2026-07-30,P004,Sony Headphones,Electronics,1,3500000,1.5,Banking,Ho Chi Minh,Cancelled,invalid_discount
+ORD009358,CUS01736,2026-03-21,P011,Python Programming Book,Books,2,300000,2.0,Banking,Ho Chi Minh,Completed,invalid_discount
+ORD009480,CUS00553,2026-02-15,P014,Yoga Mat,Sports,3,400000,-0.2,E-Wallet,Ho Chi Minh,Completed,invalid_discount
+ORD000276,CUS00657,2026-03-29,P014,Yoga Mat,Sports,1,400000,0.2,Credit Card,Ha Noi,Invalid_Status,invalid_status
+ORD000395,CUS00305,2026-01-20,P015,Badminton Racket,Sports,2,900000,0.2,Banking,Ha Noi,Invalid_Status,invalid_status
+ORD001371,CUS00216,2026-08-06,P004,Sony Headphones,Electronics,2,3500000,0.1,Cash,Ha Noi,Invalid_Status,invalid_status
+ORD002088,CUS01932,2026-05-05,P012,Data Engineering Book,Books,2,450000,0.1,Cash,Da Nang,Invalid_Status,invalid_status
+ORD002089,CUS01636,2026-02-28,P009,Air Fryer,Home Appliances,1,2800000,0.2,E-Wallet,Nha Trang,Invalid_Status,invalid_status
+ORD002298,CUS00098,2026-07-09,P013,Lipstick,Beauty,1,450000,0.15,Cash,Ho Chi Minh,Invalid_Status,invalid_status
+ORD002308,CUS01313,2026-05-20,P011,Python Programming Book,Books,1,300000,0.0,Credit Card,Da Nang,Invalid_Status,invalid_status
+ORD002700,CUS01980,2026-01-20,P014,Yoga Mat,Sports,1,400000,0.0,Banking,Ha Noi,Invalid_Status,invalid_status
+ORD003545,CUS01839,2026-01-01,P010,Vacuum Cleaner,Home Appliances,1,4200000,0.05,Cash,Ho Chi Minh,Invalid_Status,invalid_status
+ORD003804,CUS00596,2026-06-05,P015,Badminton Racket,Sports,1,900000,0.1,Banking,Ho Chi Minh,Invalid_Status,invalid_status
+ORD003972,CUS01567,2026-06-09,P007,Nike Sneakers,Fashion,1,2500000,0.0,Credit Card,Bien Hoa,Invalid_Status,invalid_status
+ORD005972,CUS00293,2026-05-14,P002,iPhone 15,Electronics,1,22000000,0.2,Credit Card,Bien Hoa,Invalid_Status,invalid_status
+ORD006124,CUS01846,2026-06-01,P001,Laptop ASUS,Electronics,4,25000000,0.0,Credit Card,Da Nang,Invalid_Status,invalid_status
+ORD006609,CUS01596,2026-05-06,P007,Nike Sneakers,Fashion,3,2500000,0.0,Credit Card,Ha Noi,Invalid_Status,invalid_status
+ORD006950,CUS01363,2026-08-05,P011,Python Programming Book,Books,1,300000,0.05,E-Wallet,Da Nang,Invalid_Status,invalid_status
+ORD007367,CUS00663,2026-01-18,P012,Data Engineering Book,Books,3,450000,0.0,Banking,Ho Chi Minh,Invalid_Status,invalid_status
+ORD007479,CUS00920,2026-06-07,P011,Python Programming Book,Books,1,300000,0.2,Banking,Thu Dau Mot,Invalid_Status,invalid_status
+ORD008077,CUS01311,2026-02-11,P002,iPhone 15,Electronics,1,22000000,0.05,E-Wallet,Ho Chi Minh,Invalid_Status,invalid_status
+ORD008272,CUS01776,2026-08-23,P005,Men T-Shirt,Fashion,2,250000,0.0,Cash,Ho Chi Minh,Invalid_Status,invalid_status
+ORD008278,CUS01089,2026-06-13,P008,Rice Cooker,Home Appliances,2,1500000,0.0,E-Wallet,Ho Chi Minh,Invalid_Status,invalid_status
+ORD008356,CUS00474,2026-03-26,P007,Nike Sneakers,Fashion,4,2500000,0.0,E-Wallet,Hai Phong,Invalid_Status,invalid_status
+ORD008753,CUS01993,2026-02-18,P001,Laptop ASUS,Electronics,1,25000000,0.1,E-Wallet,Nha Trang,Invalid_Status,invalid_status
+ORD008919,CUS00712,2026-02-15,P015,Badminton Racket,Sports,3,900000,0.15,Banking,Ho Chi Minh,Invalid_Status,invalid_status
+ORD009086,CUS01165,2026-02-15,P009,Air Fryer,Home Appliances,1,2800000,0.05,E-Wallet,Ho Chi Minh,Invalid_Status,invalid_status
+ORD009308,CUS01271,2026-01-26,P013,Lipstick,Beauty,2,450000,0.2,Banking,Hai Phong,Invalid_Status,invalid_status
+ORD009320,CUS00172,2026-03-03,P011,Python Programming Book,Books,3,300000,0.15,Banking,Thu Dau Mot,Invalid_Status,invalid_status
+ORD000034,CUS00082,2026-06-14,P010,Vacuum Cleaner,Home Appliances,2,4200000,0.15,Bitcoin,Vung Tau,Completed,invalid_payment_method
+ORD000123,CUS00613,2026-06-14,P010,Vacuum Cleaner,Home Appliances,2,4200000,0.1,Bitcoin,Ho Chi Minh,Completed,invalid_payment_method
+ORD000145,CUS01776,2026-06-10,P015,Badminton Racket,Sports,1,900000,0.0,Bitcoin,Ha Noi,Completed,invalid_payment_method
+ORD001300,CUS01322,2026-08-17,P015,Badminton Racket,Sports,1,900000,0.0,Bitcoin,Thu Dau Mot,Completed,invalid_payment_method
+ORD001441,CUS00281,2026-08-24,P014,Yoga Mat,Sports,2,400000,0.05,Bitcoin,Bien Hoa,Completed,invalid_payment_method
+ORD002193,CUS00702,2026-04-28,P002,iPhone 15,Electronics,1,22000000,0.2,Bitcoin,Ho Chi Minh,Completed,invalid_payment_method
+ORD002228,CUS01621,2026-02-22,P005,Men T-Shirt,Fashion,1,250000,0.15,Bitcoin,Bien Hoa,Completed,invalid_payment_method
+ORD002417,CUS00652,2026-02-12,P005,Men T-Shirt,Fashion,3,250000,0.2,Bitcoin,Nha Trang,Completed,invalid_payment_method
+ORD003465,CUS00866,2026-08-28,P008,Rice Cooker,Home Appliances,1,1500000,0.05,Bitcoin,Hai Phong,Completed,invalid_payment_method
+ORD003739,CUS01888,2026-02-23,P006,Women Dress,Fashion,1,650000,0.05,Bitcoin,Ha Noi,Completed,invalid_payment_method
+ORD004590,CUS01979,2026-06-07,P008,Rice Cooker,Home Appliances,1,1500000,0.15,Bitcoin,Can Tho,Returned,invalid_payment_method
+ORD004658,CUS00216,2026-06-21,P012,Data Engineering Book,Books,5,450000,0.2,Bitcoin,Ha Noi,Cancelled,invalid_payment_method
+ORD004742,CUS01017,2026-03-28,P007,Nike Sneakers,Fashion,2,2500000,0.15,Bitcoin,Ho Chi Minh,Pending,invalid_payment_method
+ORD004762,CUS01690,2026-03-27,P012,Data Engineering Book,Books,2,450000,0.1,Bitcoin,Vung Tau,Cancelled,invalid_payment_method
+ORD005183,CUS01278,2026-05-18,P008,Rice Cooker,Home Appliances,3,1500000,0.15,Bitcoin,Ho Chi Minh,Completed,invalid_payment_method
+ORD005419,CUS01831,2026-05-19,P004,Sony Headphones,Electronics,1,3500000,0.0,Bitcoin,Ho Chi Minh,Completed,invalid_payment_method
+ORD005503,CUS01505,2026-03-31,P006,Women Dress,Fashion,1,650000,0.2,Bitcoin,Vung Tau,Completed,invalid_payment_method
+ORD006292,CUS01595,2026-06-20,P009,Air Fryer,Home Appliances,1,2800000,0.1,Bitcoin,Thu Dau Mot,Completed,invalid_payment_method
+ORD006479,CUS00565,2026-08-06,P012,Data Engineering Book,Books,4,450000,0.0,Bitcoin,Hai Phong,Completed,invalid_payment_method
+ORD006902,CUS01707,2026-07-22,P014,Yoga Mat,Sports,1,400000,0.05,Bitcoin,Nha Trang,Completed,invalid_payment_method
+ORD006978,CUS00392,2026-05-09,P005,Men T-Shirt,Fashion,1,250000,0.0,Bitcoin,Ha Noi,Completed,invalid_payment_method
+ORD007694,CUS01524,2026-02-17,P009,Air Fryer,Home Appliances,3,2800000,0.0,Bitcoin,Da Nang,Completed,invalid_payment_method
+ORD008214,CUS00657,2026-07-31,P008,Rice Cooker,Home Appliances,1,1500000,0.15,Bitcoin,Thu Dau Mot,Completed,invalid_payment_method
+ORD008325,CUS01801,2026-02-15,P004,Sony Headphones,Electronics,1,3500000,0.0,Bitcoin,Da Nang,Completed,invalid_payment_method
+ORD008778,CUS01899,2026-07-22,P008,Rice Cooker,Home Appliances,4,1500000,0.2,Bitcoin,Nha Trang,Completed,invalid_payment_method
+ORD009104,CUS01865,2026-05-10,P011,Python Programming Book,Books,1,300000,0.1,Bitcoin,Ho Chi Minh,Pending,invalid_payment_method
+ORD009383,CUS01143,2026-04-30,P009,Air Fryer,Home Appliances,3,2800000,0.1,Bitcoin,Thu Dau Mot,Completed,invalid_payment_method
+ORD009558,CUS00162,2026-04-01,P011,Python Programming Book,Books,2,300000,0.05,Bitcoin,Bien Hoa,Cancelled,invalid_payment_method
