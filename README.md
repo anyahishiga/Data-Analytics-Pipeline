@@ -1,113 +1,278 @@
-# ☁️ Cloud Data Analytics Pipeline for E-commerce
-## 📌 Overview
+#  Cloud Data Analytics Pipeline for E-commerce
 
-Đây là một project **Cloud Data Analytics Pipeline** được xây dựng để mô phỏng quy trình xử lý dữ liệu e-commerce từ **raw data → data processing → storage → analytics → visualization**.
+## Overview
 
-The main goal of this project is to understand how raw sales data can be transformed into useful business information through a complete data pipeline.
+This project is a **Cloud Data Analytics Pipeline** that simulates an end-to-end workflow for processing e-commerce data:
 
-Project sử dụng **Python, Pandas, AWS S3, PostgreSQL, SQL và Power BI**. Dữ liệu ban đầu được lưu dưới dạng CSV, sau đó được upload lên AWS S3, cleaned và transformed bằng Python/Pandas, rồi load vào database để thực hiện analytics.
+```text
+Raw Data → Ingestion → Transformation → Storage → Database → Analytics → Visualization
+```
 
-Cuối cùng, các kết quả phân tích được sử dụng để xây dựng **Power BI dashboard**.
+The project demonstrates how raw sales data can be collected, cleaned, transformed, stored, and analyzed to generate useful business insights.
 
-<img width="423" height="236" alt="images (1)" src="https://github.com/user-attachments/assets/06d19166-301e-4f70-a4d4-52d0ea87bf9e" />
+### Main Technologies
+
+* **Python & Pandas** — Data processing and transformation
+* **AWS S3** — Raw and processed data storage
+* **PostgreSQL** — Database for testing and analytics
+* **AWS Redshift** — Cloud Data Warehouse
+* **SQL** — Data analysis
+* **Power BI** — Data visualization
+* **Git & GitHub** — Version control
 
 ---
 
-## 🔄 Project Workflow
+##  Architecture
 
 ```text
                     CSV Dataset
                          │
                          ▼
-              Python Data Ingestion
+                Python Data Ingestion
                          │
                          ▼
-                  AWS S3 Raw Data
+                  AWS S3 / raw
                          │
                          ▼
-                  Python + Pandas
-                         │
-                    ETL Process
+                Python + Pandas
                          │
                          ▼
-              AWS S3 Processed Data
+                  ETL / Cleaning
                          │
                          ▼
-             PostgreSQL / AWS Redshift
+               AWS S3 / processed
+                         │
+                         ▼
+              PostgreSQL / Redshift
                          │
                          ▼
                    SQL Analytics
                          │
                          ▼
-                Power BI Dashboard
+                  Power BI Dashboard
 ```
 
-Pipeline được thiết kế theo từng stage để dễ debug, test và mở rộng về sau.
-
-<img width="739" height="415" alt="images" src="https://github.com/user-attachments/assets/1cdf1d2c-537a-435d-89c1-6bb901ccb685" />
----
-
-## 🎯 Project Objectives
-
-Mục tiêu chính của project là thực hành những kiến thức cơ bản trong **Cloud Data Engineering và Data Analytics**.
-
-* Understand the basic concept of a cloud data pipeline.
-* Practice data ingestion and processing with Python.
-* Learn how to store raw and processed data using AWS S3.
-* Clean and transform raw e-commerce data.
-* Store structured data in a relational database.
-* Practice SQL for business analysis.
-* Build a simple **Data Warehouse** structure.
-* Create a Power BI dashboard.
-* Understand how different components work together in a data pipeline.
+The pipeline is separated into stages to make the project easier to maintain, test, and extend.
 
 ---
 
-# 📊 Dataset
+##  Dataset
 
-Project sử dụng một **synthetic e-commerce dataset**, trong đó mỗi record đại diện cho một order/sales transaction.
+The project uses a **synthetic e-commerce dataset**, where each record represents an order or sales transaction.
 
-Một số fields chính:
+### Main Fields
 
-| Field            | Description                   |
-| ---------------- | ----------------------------- |
-| `order_id`       | Unique order identifier       |
-| `customer_id`    | Customer identifier           |
-| `order_date`     | Date of the order             |
-| `product_id`     | Product identifier            |
-| `product_name`   | Product name                  |
-| `category`       | Product category              |
-| `quantity`       | Number of products purchased  |
-| `unit_price`     | Price of one product          |
-| `discount`       | Discount applied to the order |
-| `payment_method` | Payment method                |
-| `city`           | Customer city                 |
-| `status`         | Order status                  |
-| `total_amount`   | Total order value             |
+| Field            | Description                  |
+| ---------------- | ---------------------------- |
+| `order_id`       | Unique order identifier      |
+| `customer_id`    | Customer identifier          |
+| `order_date`     | Order date                   |
+| `product_id`     | Product identifier           |
+| `product_name`   | Product name                 |
+| `category`       | Product category             |
+| `quantity`       | Number of products purchased |
+| `unit_price`     | Price per product            |
+| `discount`       | Applied discount             |
+| `payment_method` | Payment method               |
+| `city`           | Customer city                |
+| `status`         | Order status                 |
+| `total_amount`   | Total order value            |
 
-Dataset có thể chứa **missing values, duplicate records và invalid values**.
-
-Những lỗi này được tạo intentionally để test phần **Data Quality và Data Cleaning** của pipeline.
+The dataset may contain **missing values, duplicate records, and invalid values** to simulate common data-quality issues.
 
 ---
 
-# 🛠️ Technologies
+##  Data Processing
 
-| Technology       | Purpose                        |
-| ---------------- | ------------------------------ |
-| **Python**       | Main programming language      |
-| **Pandas**       | Data cleaning & transformation |
-| **Boto3**        | Communication with AWS         |
-| **AWS S3**       | Cloud data storage             |
-| **PostgreSQL**   | Local database & testing       |
-| **AWS Redshift** | Cloud Data Warehouse           |
-| **SQL**          | Data analysis                  |
-| **Power BI**     | Data visualization             |
-| **Git & GitHub** | Version control                |
+### 1. Extract
+
+The pipeline reads the raw CSV dataset and uploads it to AWS S3:
+
+```text
+Local CSV
+   ↓
+Python
+   ↓
+AWS S3 / raw/
+```
+
+Keeping raw data separate allows the original dataset to be preserved before transformation.
+
+### 2. Transform
+
+Data is cleaned and transformed using **Python and Pandas**.
+
+Main operations include:
+
+* Removing duplicate records
+* Handling missing values
+* Validating data types
+* Validating quantity and price
+* Checking discount values
+* Standardizing categories and cities
+* Validating order status
+* Calculating total order amount
+
+```text
+total_amount =
+quantity × unit_price × (1 - discount)
+```
+
+The processed dataset is then stored in:
+
+```text
+AWS S3 / processed/
+```
+
+### 3. Load
+
+Processed data can be loaded into PostgreSQL for testing and SQL analytics.
+
+```text
+Processed Data
+      ↓
+ PostgreSQL
+      ↓
+ SQL Analytics
+```
+
+For a cloud environment, AWS Redshift can be used as the Data Warehouse:
+
+```text
+AWS S3
+  ↓
+AWS Redshift
+  ↓
+SQL Analytics
+```
 
 ---
 
-# 📁 Project Structure
+##  Data Warehouse
+
+The project uses a simple **Star Schema** for analytical queries.
+
+```text
+                   dim_customer
+                        │
+                        │
+dim_product ───── fact_sales ───── dim_date
+                        │
+                        │
+                  dim_location
+```
+
+### Fact Table
+
+#### `fact_sales`
+
+Contains sales transaction information such as:
+
+* Quantity
+* Unit price
+* Discount
+* Total amount
+* Customer
+* Product
+* Date
+* Location
+
+### Dimension Tables
+
+| Table          | Description                         |
+| -------------- | ----------------------------------- |
+| `dim_customer` | Customer information                |
+| `dim_product`  | Product, product ID, and category   |
+| `dim_date`     | Date, day, month, quarter, and year |
+| `dim_location` | City and location information       |
+
+---
+
+##  SQL Analytics
+
+SQL is used to analyze the processed data and answer business questions such as:
+
+* What is the total revenue?
+* How does revenue change by month?
+* Which products sell the most?
+* Which categories generate the most revenue?
+* Which cities have the highest sales?
+* What is the average order value?
+* Which customers generate the most revenue?
+* Which payment methods are used most often?
+
+SQL scripts are located in:
+
+```text
+sql/
+├── create_tables.sql
+├── analytics.sql
+└── data_quality.sql
+```
+
+---
+
+##  Power BI Dashboard
+
+The processed data can be connected to **Power BI** to create a sales analytics dashboard.
+
+The dashboard focuses on:
+
+### Overview
+
+* Total Revenue
+* Total Orders
+* Average Order Value
+* Total Customers
+
+### Product Analysis
+
+* Top-selling products
+* Revenue by category
+* Quantity sold
+
+### Customer Analysis
+
+* Top customers
+* Revenue by customer
+* Orders by customer
+
+### Location Analysis
+
+* Revenue by city
+* Orders by city
+
+---
+
+##  Data Quality
+
+Data quality checks are performed before loading data into the database.
+
+The pipeline checks for:
+
+```text
+Duplicate Order IDs
+        ↓
+Missing Customer IDs
+        ↓
+Missing Product IDs
+        ↓
+Invalid Quantities
+        ↓
+Invalid Prices
+        ↓
+Invalid Discounts
+        ↓
+Invalid Order Status
+        ↓
+Invalid Payment Methods
+```
+
+Invalid records are handled according to the type of data-quality issue to reduce the impact of bad data on analytics results.
+
+---
+
+##  Project Structure
 
 ```text
 cloud-data-pipeline/
@@ -143,272 +308,40 @@ cloud-data-pipeline/
 └── README.md
 ```
 
-Folder structure được chia theo từng responsibility để project dễ maintain và mở rộng hơn.
-
 ---
 
-# 🔄 ETL Process
+##  Installation & Setup
 
-## 1. Extract
-
-The pipeline starts by reading the raw CSV file containing e-commerce orders.
-
-Raw data sau đó được upload lên **AWS S3** để lưu trữ riêng biệt với processed data.
-
-```text
-Local CSV
-   ↓
-Python
-   ↓
-AWS S3 / raw/
-```
-
-Việc giữ raw data riêng giúp có thể quay lại dữ liệu ban đầu nếu transformation xảy ra lỗi.
-
----
-
-## 2. Transform
-
-Data được xử lý bằng **Python + Pandas**.
-
-Transformation process bao gồm:
-
-* Removing duplicate records
-* Handling missing values
-* Checking data types
-* Validating quantity
-* Validating product price
-* Checking discount values
-* Standardizing categories
-* Standardizing cities
-* Validating order status
-* Calculating total order amount
-
-Total amount được tính theo công thức:
-
-```text
-total_amount =
-quantity × unit_price × (1 - discount)
-```
-
-Sau khi transformation hoàn tất, processed dataset được upload lên:
-
-```text
-AWS S3 / processed/
-```
-
----
-
-## 3. Load
-
-Processed data được load vào **PostgreSQL** để testing và thực hiện SQL analytics.
-
-Đối với cloud environment, project có thể sử dụng **AWS Redshift** làm Data Warehouse.
-
-```text
-Processed CSV
-     ↓
-PostgreSQL
-     ↓
-SQL Analytics
-```
-
-Hoặc trong cloud:
-
-```text
-AWS S3
-   ↓
-AWS Redshift
-   ↓
-SQL Analytics
-```
-
----
-
-# 🏢 Data Warehouse
-
-Project sử dụng một mô hình **Star Schema** đơn giản để phục vụ analytical queries.
-
-```text
-                  dim_customer
-                       │
-                       │
-dim_product ──── fact_sales ──── dim_date
-                       │
-                       │
-                 dim_location
-```
-
-## Fact Table
-
-### `fact_sales`
-
-Chứa các thông tin liên quan đến sales transaction:
-
-* Quantity
-* Unit price
-* Discount
-* Total amount
-* Customer
-* Product
-* Date
-* Location
-
-## Dimension Tables
-
-### `dim_customer`
-
-Lưu thông tin liên quan đến customer.
-
-### `dim_product`
-
-Lưu product name, product ID và category.
-
-### `dim_date`
-
-Lưu thông tin về:
-
-* Date
-* Day
-* Month
-* Quarter
-* Year
-
-### `dim_location`
-
-Lưu city và các thông tin location liên quan.
-
----
-
-# 📈 SQL Analytics
-
-Sau khi data được load vào database, SQL được sử dụng để answer các business questions.
-
-Ví dụ:
-
-* What is the total revenue?
-* How does revenue change by month?
-* Which products sell the most?
-* Which categories generate the most revenue?
-* Which cities have the highest sales?
-* What is the average order value?
-* Which customers generate the most revenue?
-* Which payment methods are used most often?
-
-Các query được lưu trong:
-
-```text
-sql/analytics.sql
-```
-
-Data quality queries được lưu trong:
-
-```text
-sql/data_quality.sql
-```
-
----
-
-# 📊 Power BI Dashboard
-
-Processed data có thể được connect vào **Power BI** để tạo một sales dashboard.
-
-Dashboard dự kiến gồm các phần:
-
-### Overview
-
-* Total Revenue
-* Total Orders
-* Average Order Value
-* Total Customers
-
-### Product Analysis
-
-* Top-selling products
-* Revenue by category
-* Quantity sold
-
-### Customer Analysis
-
-* Top customers
-* Revenue by customer
-* Orders by customer
-
-### Location Analysis
-
-* Revenue by city
-* Orders by city
-
-Mục tiêu của dashboard là biến kết quả từ SQL analytics thành **visual business insights** dễ đọc hơn.
-
----
-
-# 🧪 Data Quality
-
-Data quality là một phần quan trọng của pipeline.
-
-Trước khi data được load vào database, pipeline sẽ thực hiện một số checks:
-
-```text
-Duplicate order IDs
-        ↓
-Missing customer IDs
-        ↓
-Missing product IDs
-        ↓
-Invalid quantities
-        ↓
-Invalid prices
-        ↓
-Invalid discounts
-        ↓
-Invalid order status
-        ↓
-Invalid payment methods
-```
-
-Các records không hợp lệ sẽ được xử lý hoặc loại bỏ tùy theo từng loại lỗi.
-
-Việc này giúp hạn chế **bad data** đi vào database và ảnh hưởng đến kết quả analytics.
-
----
-
-# ⚙️ Running the Project
-
-## 1. Clone Repository
+### 1. Clone the Repository
 
 ```bash
 git clone <repository-url>
 cd cloud-data-pipeline
 ```
 
-## 2. Create Virtual Environment
+### 2. Create a Virtual Environment
 
-Trên Windows:
+Windows:
 
 ```powershell
 python -m venv venv
 ```
 
-Activate environment:
+Activate the environment:
 
 ```powershell
 venv\Scripts\activate
 ```
 
----
-
-## 3. Install Dependencies
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
+### 4. Configure Environment Variables
 
-## 4. Configure Environment Variables
-
-Tạo file `.env`:
+Create a `.env` file:
 
 ```env
 AWS_ACCESS_KEY_ID=your_access_key
@@ -423,33 +356,33 @@ DB_USER=postgres
 DB_PASSWORD=your_password
 ```
 
-⚠️ **Do not upload `.env` to GitHub.**
+> **Never commit `.env` or AWS credentials to GitHub.**
 
-File `.env` nên được thêm vào `.gitignore` để tránh accidentally expose credentials.
+Make sure `.env` is included in `.gitignore`.
 
 ---
 
-# ▶️ Generate Dataset
+##  Running the Pipeline
 
-Chạy data generator:
+### Generate Dataset
 
 ```bash
 python src/generate_data.py
 ```
 
-Script sẽ tạo raw e-commerce dataset và lưu vào:
+The generated dataset will be saved to:
 
 ```text
 data/raw/orders.csv
 ```
 
-Sau đó pipeline có thể được chạy bằng:
+### Run the Pipeline
 
 ```bash
 python src/pipeline.py
 ```
 
-Pipeline sẽ thực hiện các bước chính:
+The main workflow is:
 
 ```text
 Generate / Read Data
@@ -471,64 +404,25 @@ SQL Analytics
 
 ---
 
-# 🖥️ Example Output
+## 🚀 Future Improvements
 
-```text
-====================================
-CLOUD DATA ANALYTICS PIPELINE
-====================================
+Possible improvements for future versions include:
 
-[1] Data ingestion SUCCESS
-
-[2] Upload raw data SUCCESS
-
-[3] Data transformation SUCCESS
-
-[4] Upload processed data SUCCESS
-
-[5] Load database SUCCESS
-
-[6] Data quality SUCCESS
-
-Total records: 10000
-Valid records: 9850
-Invalid records: 150
-
-Pipeline completed successfully.
-
-====================================
-```
-
-Output thực tế có thể thay đổi tùy vào dataset và configuration.
-
----
-
-# 🚀 Future Improvements
-
-Project hiện tại mới tập trung vào basic pipeline nên vẫn còn khá nhiều thứ có thể improve.
-
-Một số hướng phát triển tiếp theo:
-
-* [ ] Add real-time data streaming
-* [ ] Integrate Apache Kafka
-* [ ] Use AWS Glue for ETL
-* [ ] Move completely to AWS Redshift
 * [ ] Add automated pipeline scheduling
-* [ ] Improve data quality checks
+* [ ] Improve data-quality validation
 * [ ] Add automated testing
 * [ ] Add monitoring and alerting
 * [ ] Improve Power BI dashboard
+* [ ] Integrate AWS Glue
+* [ ] Move the Data Warehouse fully to AWS Redshift
+* [ ] Add real-time data streaming with Apache Kafka
 * [ ] Add sales forecasting using Machine Learning
-
-Một số features có thể được triển khai sau khi core pipeline đã stable.
 
 ---
 
-# 📚 What I Learned
+## 📚 What I Learned
 
-Through this project, mình hiểu rõ hơn cách các components trong một data system kết nối với nhau.
-
-Thay vì chỉ đọc và phân tích một CSV file, project này giúp mình thực hành toàn bộ flow:
+Through this project, I practiced the complete flow of a data analytics pipeline:
 
 ```text
 Raw Data
@@ -548,13 +442,11 @@ SQL Analytics
 Visualization
 ```
 
-Mình cũng hiểu rõ hơn sự khác nhau giữa **raw data, processed data, database, data warehouse, ETL và analytics**.
-
-Quan trọng hơn, project giúp mình có cái nhìn thực tế hơn về cách một **Cloud Data Analytics Pipeline** có thể được xây dựng và phát triển từng bước.
+The project helped me understand the roles of **raw data, data processing, ETL, databases, data warehouses, SQL analytics, and data visualization**, as well as how these components work together in a cloud-based data pipeline.
 
 ---
 
-# 👨‍💻 Author
+##  Author
 
 **Huy**
 
@@ -564,6 +456,4 @@ This project was created for learning and practicing:
 
 > This is a learning project. The e-commerce dataset is synthetic and does not contain real customer information.
 
-
-
-project started : 25/7/2026
+**Project started:** July 25, 2026
