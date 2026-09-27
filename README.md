@@ -404,7 +404,7 @@ SQL Analytics
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 Possible improvements for future versions include:
 
@@ -420,31 +420,6 @@ Possible improvements for future versions include:
 
 ---
 
-## 📚 What I Learned
-
-Through this project, I practiced the complete flow of a data analytics pipeline:
-
-```text
-Raw Data
-   ↓
-Ingestion
-   ↓
-Storage
-   ↓
-ETL
-   ↓
-Database
-   ↓
-Data Warehouse
-   ↓
-SQL Analytics
-   ↓
-Visualization
-```
-
-The project helped me understand the roles of **raw data, data processing, ETL, databases, data warehouses, SQL analytics, and data visualization**, as well as how these components work together in a cloud-based data pipeline.
-
----
 
 ##  Author
 
