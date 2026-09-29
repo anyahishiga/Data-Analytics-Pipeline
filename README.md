@@ -52,7 +52,8 @@ The project demonstrates how raw sales data can be collected, cleaned, transform
                   Power BI Dashboard
 ```
 
-The pipeline is separated into stages to make the project easier to maintain, test, and extend.
+The pipeline is separated into stages to make the project easier to maintain, test, and extend.   
+
 
 ---
 
