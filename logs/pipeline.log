@@ -1,0 +1,216 @@
+2026-09-24 10:16:12 INFO Starting pipeline (use_s3=False)
+2026-09-24 10:16:12 INFO --- Step: Data ingestion ---
+2026-09-24 10:16:12 INFO Found existing raw file /home/claude/cloud-data-pipeline/data/raw/orders.csv (use --regenerate to create a new one)
+2026-09-24 10:16:12 INFO Raw CSV has 10000 rows
+2026-09-24 10:16:12 INFO Skipping step 'Upload raw data' (--skip-s3)
+2026-09-24 10:16:12 INFO --- Step: Data transformation ---
+2026-09-24 10:16:12 INFO Starting transformation...
+2026-09-24 10:16:12 INFO Reading raw data from local file /home/claude/cloud-data-pipeline/data/raw/orders.csv
+2026-09-24 10:16:12 INFO Read 10000 raw rows
+2026-09-24 10:16:12 INFO Duplicates removed: 180
+2026-09-24 10:16:12 WARNING Rejected 161 rows: missing_required_value
+2026-09-24 10:16:12 WARNING Rejected 69 rows: invalid_discount
+2026-09-24 10:16:12 WARNING Rejected 35 rows: invalid_quantity
+2026-09-24 10:16:12 WARNING Rejected 35 rows: invalid_unit_price
+2026-09-24 10:16:12 WARNING Rejected 30 rows: invalid_payment_method
+2026-09-24 10:16:12 WARNING Rejected 29 rows: invalid_quantity_type
+2026-09-24 10:16:12 WARNING Rejected 27 rows: invalid_order_date
+2026-09-24 10:16:12 WARNING Rejected 25 rows: invalid_status
+2026-09-24 10:16:12 INFO Transformation completed: 9409 clean rows saved to /home/claude/cloud-data-pipeline/data/processed/orders_clean.csv
+2026-09-24 10:16:12 INFO Skipping step 'Upload processed' (--skip-s3)
+2026-09-24 10:16:12 INFO --- Step: Load database ---
+2026-09-24 10:16:12 INFO Loading database...
+2026-09-24 10:16:12 INFO Connecting to PostgreSQL at /tmp/pgdata:5432/ecommerce_analytics
+2026-09-24 10:16:12 INFO Creating tables (if not exist)...
+2026-09-24 10:16:12 INFO Read 9409 processed rows from CSV
+2026-09-24 10:16:14 INFO Inserted 9409 rows into table orders
+2026-09-24 10:16:14 INFO Building star schema...
+2026-09-24 10:16:14 INFO Star schema rows: {'dim_customer': 1980, 'dim_product': 15, 'dim_date': 240, 'dim_location': 11, 'fact_sales': 9409}
+2026-09-24 10:16:14 INFO --- Step: Data quality ---
+2026-09-24 10:16:14 INFO Running data quality checks...
+2026-09-24 10:16:14 INFO Data quality check duplicate_order_id       PASS
+2026-09-24 10:16:14 INFO Data quality check null_customer_id         PASS
+2026-09-24 10:16:14 INFO Data quality check null_product_id          PASS
+2026-09-24 10:16:14 INFO Data quality check quantity_le_0            PASS
+2026-09-24 10:16:14 INFO Data quality check unit_price_le_0          PASS
+2026-09-24 10:16:14 INFO Data quality check discount_lt_0            PASS
+2026-09-24 10:16:14 INFO Data quality check discount_gt_1            PASS
+2026-09-24 10:16:14 INFO Data quality check invalid_status           PASS
+2026-09-24 10:16:14 INFO Data quality check invalid_payment_method   PASS
+2026-09-24 10:16:14 INFO Data quality: 9/9 checks passed. Report: /home/claude/cloud-data-pipeline/data/processed/data_quality_report.csv
+2026-09-24 10:16:14 INFO Pipeline finished: SUCCESS
+2026-09-24 10:16:19 INFO Starting pipeline (use_s3=True)
+2026-09-24 10:16:19 INFO --- Step: Data ingestion ---
+2026-09-24 10:16:19 INFO Found existing raw file /home/claude/cloud-data-pipeline/data/raw/orders.csv (use --regenerate to create a new one)
+2026-09-24 10:16:19 INFO Raw CSV has 10000 rows
+2026-09-24 10:16:19 INFO --- Step: Upload raw data ---
+2026-09-24 10:16:19 INFO Starting ingestion...
+2026-09-24 10:16:19 ERROR Step 'Upload raw data' failed: S3_BUCKET_NAME chua duoc cau hinh. Mo file .env va dien ten bucket that cua ban (xem docs/AWS_SETUP.md). Neu chua co AWS, chay: python src/pipeline.py --skip-s3
+2026-09-24 10:16:19 INFO Pipeline finished: FAILED
+2026-09-24 10:17:06 INFO Running data quality checks...
+2026-09-24 10:17:06 INFO Data quality check null_product_id          PASS
+2026-09-24 10:17:06 INFO Data quality check null_customer_id         PASS
+2026-09-24 10:17:06 INFO Data quality check discount_gt_1            PASS
+2026-09-24 10:17:06 INFO Data quality check discount_lt_0            PASS
+2026-09-24 10:17:06 INFO Data quality check unit_price_le_0          PASS
+2026-09-24 10:17:06 WARNING Data quality check invalid_status           FAIL (1 invalid rows)
+2026-09-24 10:17:06 WARNING Data quality check quantity_le_0            FAIL (1 invalid rows)
+2026-09-24 10:17:06 INFO Data quality check invalid_payment_method   PASS
+2026-09-24 10:17:06 INFO Data quality check duplicate_order_id       PASS
+2026-09-24 10:17:06 INFO Data quality: 7/9 checks passed. Report: /home/claude/cloud-data-pipeline/data/processed/data_quality_report.csv
+2026-09-24 10:17:23 INFO Running data quality checks...
+2026-09-24 10:17:23 INFO Data quality check duplicate_order_id       PASS
+2026-09-24 10:17:23 INFO Data quality check null_customer_id         PASS
+2026-09-24 10:17:23 INFO Data quality check null_product_id          PASS
+2026-09-24 10:17:23 INFO Data quality check quantity_le_0            PASS
+2026-09-24 10:17:23 INFO Data quality check unit_price_le_0          PASS
+2026-09-24 10:17:23 INFO Data quality check discount_lt_0            PASS
+2026-09-24 10:17:23 INFO Data quality check discount_gt_1            PASS
+2026-09-24 10:17:23 INFO Data quality check invalid_status           PASS
+2026-09-24 10:17:23 INFO Data quality check invalid_payment_method   PASS
+2026-09-24 10:17:23 INFO Data quality: 9/9 checks passed. Report: /home/claude/cloud-data-pipeline/data/processed/data_quality_report.csv
+2026-09-24 10:18:25 INFO Starting pipeline (use_s3=False)
+2026-09-24 10:18:25 INFO --- Step: Data ingestion ---
+2026-09-24 10:18:25 INFO Generating 10000 rows of sample e-commerce data...
+2026-09-24 10:18:25 INFO Saved 10000 rows to /home/claude/cloud-data-pipeline/data/raw/orders.csv
+2026-09-24 10:18:25 INFO Raw CSV has 10000 rows
+2026-09-24 10:18:25 INFO Skipping step 'Upload raw data' (--skip-s3)
+2026-09-24 10:18:25 INFO --- Step: Data transformation ---
+2026-09-24 10:18:25 INFO Starting transformation...
+2026-09-24 10:18:25 INFO Reading raw data from local file /home/claude/cloud-data-pipeline/data/raw/orders.csv
+2026-09-24 10:18:25 INFO Read 10000 raw rows
+2026-09-24 10:18:26 INFO Duplicates removed: 180
+2026-09-24 10:18:26 WARNING Rejected 143 rows: missing_required_value
+2026-09-24 10:18:26 WARNING Rejected 61 rows: invalid_discount
+2026-09-24 10:18:26 WARNING Rejected 42 rows: invalid_unit_price
+2026-09-24 10:18:26 WARNING Rejected 38 rows: invalid_quantity
+2026-09-24 10:18:26 WARNING Rejected 31 rows: invalid_order_date
+2026-09-24 10:18:26 WARNING Rejected 28 rows: invalid_payment_method
+2026-09-24 10:18:26 WARNING Rejected 26 rows: invalid_status
+2026-09-24 10:18:26 WARNING Rejected 24 rows: invalid_quantity_type
+2026-09-24 10:18:26 INFO Transformation completed: 9427 clean rows saved to /home/claude/cloud-data-pipeline/data/processed/orders_clean.csv
+2026-09-24 10:18:26 INFO Skipping step 'Upload processed' (--skip-s3)
+2026-09-24 10:18:26 INFO --- Step: Load database ---
+2026-09-24 10:18:26 INFO Loading database...
+2026-09-24 10:18:26 INFO Connecting to PostgreSQL at /tmp/pgdata:5432/ecommerce_analytics
+2026-09-24 10:18:26 INFO Creating tables (if not exist)...
+2026-09-24 10:18:26 INFO Read 9427 processed rows from CSV
+2026-09-24 10:18:27 INFO Inserted 9427 rows into table orders
+2026-09-24 10:18:27 INFO Building star schema...
+2026-09-24 10:18:28 INFO Star schema rows: {'dim_customer': 1979, 'dim_product': 15, 'dim_date': 243, 'dim_location': 11, 'fact_sales': 9427}
+2026-09-24 10:18:28 INFO --- Step: Data quality ---
+2026-09-24 10:18:28 INFO Running data quality checks...
+2026-09-24 10:18:28 INFO Data quality check duplicate_order_id       PASS
+2026-09-24 10:18:28 INFO Data quality check null_customer_id         PASS
+2026-09-24 10:18:28 INFO Data quality check null_product_id          PASS
+2026-09-24 10:18:28 INFO Data quality check quantity_le_0            PASS
+2026-09-24 10:18:28 INFO Data quality check unit_price_le_0          PASS
+2026-09-24 10:18:28 INFO Data quality check discount_lt_0            PASS
+2026-09-24 10:18:28 INFO Data quality check discount_gt_1            PASS
+2026-09-24 10:18:28 INFO Data quality check invalid_status           PASS
+2026-09-24 10:18:28 INFO Data quality check invalid_payment_method   PASS
+2026-09-24 10:18:28 INFO Data quality: 9/9 checks passed. Report: /home/claude/cloud-data-pipeline/data/processed/data_quality_report.csv
+2026-09-24 10:18:28 INFO Pipeline finished: SUCCESS
+2026-09-24 10:19:29 INFO Starting pipeline (use_s3=False)
+2026-09-24 10:19:29 INFO --- Step: Data ingestion ---
+2026-09-24 10:19:29 INFO Found existing raw file /home/claude/cloud-data-pipeline/data/raw/orders.csv (use --regenerate to create a new one)
+2026-09-24 10:19:29 INFO Raw CSV has 10000 rows
+2026-09-24 10:19:29 INFO Skipping step 'Upload raw data' (--skip-s3)
+2026-09-24 10:19:29 INFO --- Step: Data transformation ---
+2026-09-24 10:19:29 INFO Starting transformation...
+2026-09-24 10:19:29 INFO Reading raw data from local file /home/claude/cloud-data-pipeline/data/raw/orders.csv
+2026-09-24 10:19:29 INFO Read 10000 raw rows
+2026-09-24 10:19:29 INFO Duplicates removed: 180
+2026-09-24 10:19:29 WARNING Rejected 143 rows: missing_required_value
+2026-09-24 10:19:29 WARNING Rejected 61 rows: invalid_discount
+2026-09-24 10:19:29 WARNING Rejected 42 rows: invalid_unit_price
+2026-09-24 10:19:29 WARNING Rejected 38 rows: invalid_quantity
+2026-09-24 10:19:29 WARNING Rejected 31 rows: invalid_order_date
+2026-09-24 10:19:29 WARNING Rejected 28 rows: invalid_payment_method
+2026-09-24 10:19:29 WARNING Rejected 26 rows: invalid_status
+2026-09-24 10:19:29 WARNING Rejected 24 rows: invalid_quantity_type
+2026-09-24 10:19:29 INFO Transformation completed: 9427 clean rows saved to /home/claude/cloud-data-pipeline/data/processed/orders_clean.csv
+2026-09-24 10:19:29 INFO Skipping step 'Upload processed' (--skip-s3)
+2026-09-24 10:19:29 INFO --- Step: Load database ---
+2026-09-24 10:19:29 INFO Loading database...
+2026-09-24 10:19:29 INFO Connecting to PostgreSQL at /tmp/pgdata:5432/ecommerce_analytics
+2026-09-24 10:19:29 INFO Creating tables (if not exist)...
+2026-09-24 10:19:29 INFO Read 9427 processed rows from CSV
+2026-09-24 10:19:31 INFO Inserted 9427 rows into table orders
+2026-09-24 10:19:31 INFO Building star schema...
+2026-09-24 10:19:31 INFO Star schema rows: {'dim_customer': 1979, 'dim_product': 15, 'dim_date': 243, 'dim_location': 11, 'fact_sales': 9427}
+2026-09-24 10:19:31 INFO --- Step: Data quality ---
+2026-09-24 10:19:31 INFO Running data quality checks...
+2026-09-24 10:19:31 INFO Data quality check duplicate_order_id       PASS
+2026-09-24 10:19:31 INFO Data quality check null_customer_id         PASS
+2026-09-24 10:19:31 INFO Data quality check null_product_id          PASS
+2026-09-24 10:19:31 INFO Data quality check quantity_le_0            PASS
+2026-09-24 10:19:31 INFO Data quality check unit_price_le_0          PASS
+2026-09-24 10:19:31 INFO Data quality check discount_lt_0            PASS
+2026-09-24 10:19:31 INFO Data quality check discount_gt_1            PASS
+2026-09-24 10:19:31 INFO Data quality check invalid_status           PASS
+2026-09-24 10:19:31 INFO Data quality check invalid_payment_method   PASS
+2026-09-24 10:19:31 INFO Data quality: 9/9 checks passed. Report: /home/claude/cloud-data-pipeline/data/processed/data_quality_report.csv
+2026-09-24 10:19:31 INFO Pipeline finished: SUCCESS
+2026-09-24 10:20:53 INFO Starting transformation...
+2026-09-24 10:20:53 INFO Reading raw data from local file /home/claude/cloud-data-pipeline/data/raw/orders.csv
+2026-09-24 10:20:53 INFO Read 10000 raw rows
+2026-09-24 10:20:53 INFO Duplicates removed: 180
+2026-09-24 10:20:53 WARNING Rejected 143 rows: missing_required_value
+2026-09-24 10:20:53 WARNING Rejected 61 rows: invalid_discount
+2026-09-24 10:20:53 WARNING Rejected 42 rows: invalid_unit_price
+2026-09-24 10:20:53 WARNING Rejected 38 rows: invalid_quantity
+2026-09-24 10:20:53 WARNING Rejected 31 rows: invalid_order_date
+2026-09-24 10:20:53 WARNING Rejected 28 rows: invalid_payment_method
+2026-09-24 10:20:53 WARNING Rejected 26 rows: invalid_status
+2026-09-24 10:20:53 WARNING Rejected 24 rows: invalid_quantity_type
+2026-09-24 10:20:53 INFO Transformation completed: 9427 clean rows saved to /home/claude/cloud-data-pipeline/data/processed/orders_clean.csv
+2026-09-24 10:23:18 INFO Loading database...
+2026-09-24 10:23:18 INFO Connecting to PostgreSQL at /tmp/pgdata:5432/ecommerce_analytics
+2026-09-24 10:23:18 INFO Creating tables (if not exist)...
+2026-09-24 10:23:18 INFO Read 9427 processed rows from CSV
+2026-09-24 10:23:20 INFO Inserted 9427 rows into table orders
+2026-09-24 10:23:20 INFO Building star schema...
+2026-09-24 10:23:20 INFO Star schema rows: {'dim_customer': 1979, 'dim_product': 15, 'dim_date': 243, 'dim_location': 11, 'fact_sales': 9427}
+2026-09-24 10:30:23 INFO Starting pipeline (use_s3=False)
+2026-09-24 10:30:23 INFO --- Step: Data ingestion ---
+2026-09-24 10:30:23 INFO Generating 10000 rows of sample e-commerce data...
+2026-09-24 10:30:23 INFO Saved 10000 rows to /home/claude/cloud-data-pipeline/data/raw/orders.csv
+2026-09-24 10:30:23 INFO Raw CSV has 10000 rows
+2026-09-24 10:30:23 INFO Skipping step 'Upload raw data' (--skip-s3)
+2026-09-24 10:30:23 INFO --- Step: Data transformation ---
+2026-09-24 10:30:23 INFO Starting transformation...
+2026-09-24 10:30:23 INFO Reading raw data from local file /home/claude/cloud-data-pipeline/data/raw/orders.csv
+2026-09-24 10:30:23 INFO Read 10000 raw rows
+2026-09-24 10:30:23 INFO Duplicates removed: 180
+2026-09-24 10:30:23 WARNING Rejected 143 rows: missing_required_value
+2026-09-24 10:30:23 WARNING Rejected 61 rows: invalid_discount
+2026-09-24 10:30:23 WARNING Rejected 42 rows: invalid_unit_price
+2026-09-24 10:30:23 WARNING Rejected 38 rows: invalid_quantity
+2026-09-24 10:30:23 WARNING Rejected 31 rows: invalid_order_date
+2026-09-24 10:30:23 WARNING Rejected 28 rows: invalid_payment_method
+2026-09-24 10:30:23 WARNING Rejected 26 rows: invalid_status
+2026-09-24 10:30:23 WARNING Rejected 24 rows: invalid_quantity_type
+2026-09-24 10:30:23 INFO Transformation completed: 9427 clean rows saved to /home/claude/cloud-data-pipeline/data/processed/orders_clean.csv
+2026-09-24 10:30:23 INFO Skipping step 'Upload processed' (--skip-s3)
+2026-09-24 10:30:23 INFO --- Step: Load database ---
+2026-09-24 10:30:23 INFO Loading database...
+2026-09-24 10:30:23 INFO Connecting to PostgreSQL at /tmp/pgdata:5432/ecommerce_analytics
+2026-09-24 10:30:23 INFO Creating tables (if not exist)...
+2026-09-24 10:30:23 INFO Read 9427 processed rows from CSV
+2026-09-24 10:30:25 INFO Inserted 9427 rows into table orders
+2026-09-24 10:30:25 INFO Building star schema...
+2026-09-24 10:30:25 INFO Star schema rows: {'dim_customer': 1979, 'dim_product': 15, 'dim_date': 243, 'dim_location': 11, 'fact_sales': 9427}
+2026-09-24 10:30:25 INFO --- Step: Data quality ---
+2026-09-24 10:30:25 INFO Running data quality checks...
+2026-09-24 10:30:25 INFO Data quality check duplicate_order_id       PASS
+2026-09-24 10:30:25 INFO Data quality check null_customer_id         PASS
+2026-09-24 10:30:25 INFO Data quality check null_product_id          PASS
+2026-09-24 10:30:25 INFO Data quality check quantity_le_0            PASS
+2026-09-24 10:30:25 INFO Data quality check unit_price_le_0          PASS
+2026-09-24 10:30:25 INFO Data quality check discount_lt_0            PASS
+2026-09-24 10:30:25 INFO Data quality check discount_gt_1            PASS
+2026-09-24 10:30:25 INFO Data quality check invalid_status           PASS
+2026-09-24 10:30:25 INFO Data quality check invalid_payment_method   PASS
+2026-09-24 10:30:25 INFO Data quality: 9/9 checks passed. Report: /home/claude/cloud-data-pipeline/data/processed/data_quality_report.csv
+2026-09-24 10:30:25 INFO Pipeline finished: SUCCESS
