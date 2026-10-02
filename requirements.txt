@@ -1,0 +1,15 @@
+# Thư viện cần cài:  pip install -r requirements.txt
+#
+# pandas           -> đọc/làm sạch/biến đổi dữ liệu dạng bảng (ETL)
+# boto3            -> thư viện chính thức của AWS để nói chuyện với S3
+# python-dotenv    -> đọc file .env (mật khẩu, key) vào biến môi trường
+# sqlalchemy       -> kết nối và thao tác với database (PostgreSQL / Redshift)
+# psycopg2-binary  -> "driver" giúp SQLAlchemy nói chuyện với PostgreSQL
+# pytest           -> chạy test tự động
+
+pandas>=2.0
+boto3>=1.34
+python-dotenv>=1.0
+sqlalchemy>=2.0
+psycopg2-binary>=2.9
+pytest>=8.0
