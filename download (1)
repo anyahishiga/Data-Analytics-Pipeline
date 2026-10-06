@@ -1,0 +1,33 @@
+# --- Bí mật: KHÔNG BAO GIỜ commit file .env ---
+# File .env chứa AWS_SECRET_ACCESS_KEY và DB_PASSWORD.
+# Nếu lỡ commit, bất kỳ ai đọc được lịch sử Git (kể cả sau khi xoá file)
+# cũng có thể lấy được chìa khoá truy cập AWS / database của bạn.
+.env
+
+# --- Môi trường ảo Python ---
+venv/
+env/
+.venv/
+
+# --- File biên dịch / cache của Python ---
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# --- Log runtime (giữ lại thư mục bằng .gitkeep, không giữ nội dung log) ---
+logs/*
+!logs/.gitkeep
+
+# --- Dữ liệu runtime (giữ lại thư mục bằng .gitkeep, không giữ dữ liệu thật) ---
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# --- Rác của hệ điều hành / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

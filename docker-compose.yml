@@ -1,0 +1,58 @@
+# =================================================================
+# docker-compose.yml
+# Chay ca PostgreSQL VA pipeline chi bang 1 lenh, khong can tu cai
+# PostgreSQL thu cong tren may (xem POSTGRESQL_SETUP.md neu muon
+# hieu cach lam thu cong truoc).
+#
+# Cach dung:
+#   docker compose up --build       # chay 1 lan (build image + chay pipeline)
+#   docker compose run --rm app python src/pipeline.py --regenerate
+#   docker compose down -v          # dung va xoa sach du lieu Postgres
+#
+# LUU Y: mac dinh chay voi --skip-s3 (chi chay phan local: sinh du
+# lieu -> transform -> load -> segment -> data quality), vi container
+# se khong co san file .env chua AWS credentials that cua ban. Neu
+# muon test ca phan upload S3, sua bien moi truong AWS_* ben duoi va
+# doi CMD trong Dockerfile (hoac override command: trong service app).
+# =================================================================
+
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: ecommerce_analytics
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  app:
+    build: .
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DB_HOST: postgres
+      DB_PORT: "5432"
+      DB_NAME: ecommerce_analytics
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      AWS_ACCESS_KEY_ID: ""
+      AWS_SECRET_ACCESS_KEY: ""
+      AWS_REGION: ap-southeast-1
+      S3_BUCKET_NAME: ""
+      SLACK_WEBHOOK_URL: ""
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    command: ["python", "src/pipeline.py", "--skip-s3", "--regenerate"]
+
+volumes:
+  pgdata:
